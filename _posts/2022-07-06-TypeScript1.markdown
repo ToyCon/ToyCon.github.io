@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TypeScript 학습 1
+title: TypeScript의 Type
 date: 2022-07-11 16:30:00 +0900
-category: sample
+category: TypeScript
 ---
 > 코딩애플 빠르게 마스터하는 TypsScript 강의 학습
 # TypeScript의 Types
