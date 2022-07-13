@@ -1,7 +1,7 @@
 ---
 layout: post
 title: tsconfig.json
-date: 2022-07-12 19:30:00 +0900
+date: 2022-07-13 17:30:00 +0900
 categories: TypeScript
 ---
 > 코딩애플 빠르게 마스터하는 TypsScript 강의 학습
