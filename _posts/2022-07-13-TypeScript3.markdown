@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tsconfig.json
+title: Union Type
 date: 2022-07-13 17:30:00 +0900
 categories: TypeScript
 ---
