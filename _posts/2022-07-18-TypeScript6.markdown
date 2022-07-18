@@ -1,7 +1,7 @@
 ---
 layout: post
 title: class
-date: 2022-07-18 15:00:00 +0900
+date: 2022-07-15 17:10:00 +0900
 categories: TypeScript
 ---
 > 코딩애플 빠르게 마스터하는 TypsScript 강의 학습
