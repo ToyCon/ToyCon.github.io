@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TypeScript의 Type
+title: TypeScript Part 1-1
 date: 2022-07-11 16:30:00 +0900
 category: TypeScript
 ---

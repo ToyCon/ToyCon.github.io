@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Narrowing & Assertion
+title: TypeScript Part 1-4
 date: 2022-07-14 21:35:00 +0900
 categories: TypeScript
 ---

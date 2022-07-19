@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tsconfig.json
+title: TypeScript Part 1-2
 date: 2022-07-12 19:30:00 +0900
 categories: TypeScript
 ---

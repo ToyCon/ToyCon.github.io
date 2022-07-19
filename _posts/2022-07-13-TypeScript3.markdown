@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Union Type
+title: TypeScript Part 1-3
 date: 2022-07-13 17:30:00 +0900
 categories: TypeScript
 ---
