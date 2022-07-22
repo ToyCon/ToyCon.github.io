@@ -1,0 +1,8 @@
+---
+layout: post
+title: TypeScript Part 2-5
+date: 2022-07-22 12:30:00 +0900
+categories: TypeScript
+---
+> d.ts
+> implements
