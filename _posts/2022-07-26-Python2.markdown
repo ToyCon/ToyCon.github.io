@@ -1,0 +1,8 @@
+---
+layout: post
+title: Python Part 1-2
+date: 2022-07-26 21:30:00 +0900
+categories: Python
+---
+> d.ts
+> implements
