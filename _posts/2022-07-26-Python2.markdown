@@ -6,7 +6,7 @@ categories: Python
 ---
 ### Python 기본문법
 1. print
-변수를 선언하고 변수에 값을 할당해서 그 값을 가지고 계산을 하거나 유의미한 결과를 만들어내는 과정은 JavaScript와 동일. 다만 결과를 보고 싶을 때 JavaScript는 console 명령어를 썼는데 Python은 print를 쓴다. 구글에 python return print로 검색하니 많은 결과가 나오는걸 보니 처음에 헷갈리는건 다들 비슷한 것 같다. 다만 Python에서는 return이 JS와 용법이 다른 것 같다. 이건 나중에 작성. 그리고 JS와 차이가 나는 부분은 값을 입력할 때 값에 사칙연산이 된다. JS의 경우 string 타입에 숫자를 곱하면 NaN이 되는데 Python은 그냥 변수를 해당 횟수만큼 출력해 줌. 이런 부분은 혼동하기 쉬운 것 같다. 텍스트를 그대로 변수로 취급해서 사칙연산을 적용해주는걸 보니 Python을 왜 웹 크롤링에 쓰는지 이유를 짐작할 만 하다.
+변수를 선언하고 변수에 값을 할당해서 그 값을 가지고 계산을 하거나 유의미한 결과를 만들어내는 과정은 JavaScript와 동일. 다만 결과를 보고 싶을 때 JavaScript는 console 명령어를 썼는데 Python은 print를 쓴다. JS와 차이가 나는 부분은 값을 입력할 때 값에 사칙연산이 된다. JS의 경우 string 타입에 숫자를 곱하면 NaN이 되는데 Python은 그냥 변수를 해당 횟수만큼 출력해 줌. 이런 부분은 혼동하기 쉬운 것 같다. 텍스트를 그대로 사칙연산을 적용해주는걸 보니 Python을 왜 웹 크롤링에 쓰는지 이유를 짐작이 간다.
 
 Python
 ```Pyhton
@@ -21,3 +21,49 @@ console.log('Bulbarsaur', 'Bulbarsaur')
 ```
 > NaN    
 > Bulbarsaur Bulbarsaur    
+
+2. 변수선언
+JavaScript처럼 var, let, const 없이 그냥 변수이름 = 변수에 넣을 값
+
+Python
+```Pyhton
+bulbar = 1
+print(bulbar)
+```
+> 1    
+
+JavaScript
+```JavaScript
+let bulbar = 1
+console.log(typeof bulbar)
+console.log(bulbar)
+```
+> number    
+> 1
+
+3. 인덱싱
+글자 뒤에 [] 붙여서 일부만 출력 가능. 이건 JavaScript와 거의 동일한데 조금 더 편리함. 일부 문자를 가져오는 경우 JS라면 slice 메서드를 써야 함.
+
+Python
+```Pyhton
+print('bulbarsaur'[1])
+pokemon = 'bulbarsaur'
+print(pokemon[0:5])
+```
+> u
+> bulba
+
+JavaScript
+```JavaScript
+let pokemon = 'bulbarsaur'
+console.log(pokemon[2])
+console.log(pokemon.slice(0, 5))
+```
+> l    
+> bulba
+
+4. 리스트
+입력과 출력 모두 JS의 배열과 똑같음. 변수 선언하고 [] 안에 값을 쉼표로 구분해서 넣으면 됨. 배열안에 배열 값이 들어가는 것과 마찬가지로 리스트 안에 리스트가 들어갈 수 있음. JS 메서드처럼 Python에도 .명령어 식으로 내장함수 쓸 수 있음.
+
+5. 딕셔너리
+입력과 출력 모두 JS의 객체와 똑같음. 변수 선언하고 {} 안에 키:값 형태로 입력하고 쉼표로 구분해서 넣으면 됨. 딕셔너리 안에 딕셔너리도 리스트와 마찬가지로 가능. 딕셔너리도 .명령어 식으로 내장함수 쓸 수 있음.
