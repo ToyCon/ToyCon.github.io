@@ -62,58 +62,23 @@ console.log(pokemon.slice(0, 5))
 > l    
 > bulba
 
-#### 4. 리스트    
-입력과 출력 모두 JS의 배열과 똑같음. 변수 선언하고 [] 안에 값을 쉼표로 구분해서 넣으면 됨. 배열안에 배열 값이 들어가는 것과 마찬가지로 리스트 안에 리스트가 들어갈 수 있음. JS 메서드처럼 Python에도 .명령어 식으로 내장함수 쓸 수 있음.
+#### 4. 들여쓰기(indent)
+Python은 중괄호로 범위를 지정하지 않고 들여쓰기를 문법의 기본으로 채용함. 따라서 들여쓰기를 멋대로 하면 안된다. 반복문처럼 같은 범위 안에서 여러줄 코드를 실행해야 할 경우 들여쓰기가 일치해야 한다. 다르면 코드 실행이 이상해짐.    
 
-Python
+#### 5. 함수 선언
+JS에서 function 함수명() {} 이렇게 선언하는것과 비슷함. Python은 def를 사용. 중괄호 대신 들여쓰기로 코드 범위 정하는 건 계속 생각할것.
 ```Pyhton
-이상해씨 = [1, ['Grass', 'Poison'], True]
-print(이상해씨)
-print(이상해씨[0])
-print(이상해씨[1][1])
+> def 함수명() :    
+> &nbsp;&nbsp;실행할코드    
 ```
-> [1, ['Grass', 'Poison'], True]    
-> 1    
-> Poison    
 
-JavaScript
-```JavaScript
-const 이상해꽃 = [3, ['Grass', 'Poison'], false];
-console.log(이상해꽃);
-console.log(이상해꽃[0]);
-console.log(이상해꽃[1][1]);
-```
-> [3, ['Grass', 'Poison'], false]    
-> 3    
-> Poison    
-
-#### 5. 딕셔너리    
-JS의 객체와 비슷함. 변수 선언하고 {} 안에 키:값 형태로 입력하고 쉼표로 구분해서 넣으면 됨. 차이점은 키에도 ''를 붙여야 함. 출력할 때 명령어는 JS와 다르다. 딕셔너리 안에 딕셔너리도 리스트와 마찬가지로 가능. 딕셔너리도 .명령어 식으로 내장함수 쓸 수 있음.
-
-Python
+뭔가 값을 집어넣어서 연산을 하거나 특정 값을 얻고 싶으면
 ```Pyhton
-이상해씨 = {
-    'index' : 1,
-    'type' : ['Grass', 'Poison'],
-    'evolve' : True,
-    'evolveTo' : '이상해풀'
-}
-print(이상해씨['type'][0])
-print(이상해씨['evolve'])
+> def 함수명(파라미터) :    
+> &nbsp;&nbsp;실행할코드    
+> &nbsp;&nbsp;return 결과값    
 ```
-> Grass    
-> True    
 
-JavaScript
-```JavaScript
-const 킬리아 = {
-    index: 281,
-    type: ['Psychic', 'Fairy'],
-    evolve: true,
-    evolveTo : ['가디안', '엘레이드']
-};
-console.log(킬리아.type);
-console.log(킬리아.evolveTo[1]);
-```
-> [ 'Psychic', 'Fairy' ]    
-> 엘레이드    
+#### 6. 주석처리
+블록 단위는 작은 따옴표 세개(''')
+행 단위는 # 사용
