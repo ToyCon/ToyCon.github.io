@@ -30,8 +30,34 @@ mac : sudo 붙여서 실행
 TypeScript 파일은 nodejs에서 바로 실행되지 않음. 따라서 JS로 변환이 필요. 터미널에서 tsc -w 실행하면 자동 변환됨.
 ### TypeScript 설정
 
+
 ### React에 적용
+<details>
+<summary>React 프로젝트에 적용</summary>
+<div markdown="1">
+작업 폴더에서 터미널 열고
+npm install --save typescript @types/node @types/react @types/react-dom @types jest
+입력
+</div>
+</details>
+
+<details>
+<summary>새로운 React 프로젝트 생성</summary>
+<div markdown="1">
+프로젝트를 생성할 작업 폴더에서 터미널 열고
+npx create-react-app my-app --template typescript
+입력
+</div>
+</details>
+
 ### Vue에 적용
+작업 폴더에서 터미널 열고
+vue add typescript
+입력
+
+vue 파일에서 타입스크립트 활용하려면
+> <script lang="ts">    
+> </script>    
 
 ### tsconfig.json
 TypeScript 파일을 JavaScript로 변환할 때 어떻게 변환할 것인지 세부설정을 담은 파일
