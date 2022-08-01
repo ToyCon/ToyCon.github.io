@@ -4,6 +4,17 @@ title: TypeScript Part 1-2
 date: 2022-07-12 19:30:00 +0900
 categories: TypeScript
 ---
+### JavaScript의 Type
+원시 타입(primitive type)
+number
+string
+boolean
+undefined
+null
+symbol
+객체 타입(object / reference type)
+객체, 함수, 배열 등
+
 > TypeScript의 Types
 primitive types
 string

@@ -18,39 +18,31 @@ Nodejs 설치되어 있는지 확인한 뒤 터미널에서
 > npm install -g typescript    
 <details>
 <summary>오류날 경우</summary>
-<div markdown="1">
 nodejs 업데이트    
 windows : powershell 관리자 권한으로 실행한 뒤 set-ExecutionPolicy Unrestricted 입력 → y    
 mac : sudo 붙여서 실행    
-</div>
 </details>
 
 설치 끝나면 TypeScript로 작업할 폴더로 이동해서 tsconfig.json 파일 생성해서 TypeScript를 JavaScript로 컴파일할때 설정을 작성. 그 다음에 작업하면 됨. 파일 확장자는 .ts
 
 TypeScript 파일은 nodejs에서 바로 실행되지 않음. 따라서 JS로 변환이 필요. 터미널에서 tsc -w 실행하면 자동 변환됨.
-### TypeScript 설정
 
-
-### React에 적용
+#### React에 적용
 <details>
 <summary>React 프로젝트에 적용</summary>
-<div markdown="1">
 작업 폴더에서 터미널 열고
 npm install --save typescript @types/node @types/react @types/react-dom @types jest
 입력
-</div>
 </details>
 
 <details>
 <summary>새로운 React 프로젝트 생성</summary>
-<div markdown="1">
 프로젝트를 생성할 작업 폴더에서 터미널 열고
 npx create-react-app my-app --template typescript
 입력
-</div>
 </details>
 
-### Vue에 적용
+#### Vue에 적용
 작업 폴더에서 터미널 열고
 vue add typescript
 입력
