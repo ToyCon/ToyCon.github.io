@@ -21,4 +21,4 @@ categories: Python
 
 다른 해결책도 찾았는데 python3-setuptools 를 설치하는 방법을 알려줬다. 일단 위의 방법으로 설치를 했기 때문에 기록만 해둔다. python을 본격적으로 다룬다면 이 방법이 더 좋을 것 같다.(https://aisiunme.github.io/ubuntu/2018/09/12/troubleshooting-ubuntu-pip-install/)
 
-그리고 예제파일을 하나 만들어서 실행해봤는데 cli상에서 실행 명령어가 python3. mac 명령어를 따라가는 모양.
+그리고 예제파일을 하나 만들어서 실행해봤는데 cli상에서 실행 명령어가 python3. mac 명령어를 따라가는 모양이다.
