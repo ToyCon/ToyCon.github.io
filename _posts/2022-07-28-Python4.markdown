@@ -75,4 +75,4 @@ console.log(킬리아.evolveTo[1]);
 #### 6. 집합
 
 #### 7. 불(bool)
-JS의 불린(boolean)에 해당. True와 False 두가지 값만 존재한다. Python에서는 첫글자가 대문자여야 인식함.
+JS의 불린(boolean)에 해당. True와 False 두가지 값만 존재한다. Python에서는 첫글자가 대문자여야 인식한다. 

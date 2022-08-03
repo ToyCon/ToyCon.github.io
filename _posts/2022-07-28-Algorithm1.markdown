@@ -7,4 +7,3 @@ categories: Algorithm
 ### 재귀(Recursion)
 
 
-### 피보나치 수열
