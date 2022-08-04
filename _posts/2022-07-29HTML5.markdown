@@ -2,6 +2,6 @@
 layout: post
 title: 자료구조
 date: 2022-07-28 15:00:00 +0900
-categories: Algorithm
+categories: HTML
 ---
 ### 자료구조

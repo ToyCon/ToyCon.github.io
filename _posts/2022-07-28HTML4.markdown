@@ -2,7 +2,7 @@
 layout: post
 title: 재귀
 date: 2022-07-28 15:00:00 +0900
-categories: Algorithm
+categories: HTML
 ---
 ### 재귀(Recursion)
 

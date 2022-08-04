@@ -6,7 +6,7 @@ categories: Python
 ---
 ### Python 기본문법
 #### 1. print    
-변수를 선언하고 변수에 값을 할당해서 그 값을 가지고 계산을 하거나 유의미한 결과를 만들어내는 과정은 JavaScript와 동일. 다만 결과를 보고 싶을 때 JavaScript는 console 명령어를 썼는데 Python은 print를 쓴다. JS와 차이가 나는 부분은 값을 입력할 때 값에 사칙연산이 된다. JS의 경우 string 타입에 숫자를 곱하면 NaN이 되는데 Python은 그냥 변수를 해당 횟수만큼 출력해 줌. 이런 부분은 혼동하기 쉬운 것 같다.
+변수를 선언하고 변수에 값을 할당해서 그 값을 가지고 계산을 하거나 유의미한 결과를 만들어내는 과정은 JavaScript와 동일. 다만 결과를 보고 싶을 때 JavaScript는 console 명령어를 썼는데 Python은 print를 쓴다. JS와 차이가 나는 부분은 값을 입력할 때 값에 사칙연산이 된다. JS의 경우 string 타입에 숫자를 곱하면 NaN이 되는데 Python은 그냥 변수를 해당 횟수만큼 출력해 줌. 이런 부분은 JS를 기준으로 생각하는 내 입장에서는 혼동하기 쉽다.
 
 Python
 ```Pyhton
