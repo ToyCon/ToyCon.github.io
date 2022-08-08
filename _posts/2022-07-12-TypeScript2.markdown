@@ -4,74 +4,28 @@ title: TypeScript Part 1-2
 date: 2022-07-12 19:30:00 +0900
 categories: TypeScript
 ---
-### JavaScript의 Type
-원시 타입(primitive type)
-number
-string
-boolean
-undefined
-null
-symbol
-객체 타입(object / reference type)
-객체, 함수, 배열 등
+원래 첫 번째 포스트에 몰아서 정리햇었는데 분량이 늘어나서 별도의 포스트로 분리. 
 
-> TypeScript의 Types
-primitive types
-string
-number
-boolean
-null
-undefined
-> null undefined는 굳이 사용하지 않음
-굳이 타입을 지정할 필요가 없음. 변수를 선언할 때 변수형에 맞춰서 입력하면 자동으로 타입 지정됨
+### tsconfig.json
+TypeScript 파일을 JavaScript로 변환할 때 어떻게 변환할 것인지 세부설정을 담은 파일.
 
 ```TypeScript
-let 이름:string = 'Bulbarsaur';
-//이름 = 123; 오류납니다
-
-let 배열:string[] = ['Bulbarsaur','Ivysaur'];
-let 번호:{indexnum : number} = {indexnum = number};
-
-type nameType = string | number;
-let 이름:nameType = 'Venusaur';
-
-function 함수명(x:number) : number {
-    return x*2;
-}
-
-//에러가 발생하는 함수
-/*function 함수명(x:number | string) {
-    return x*2;
-}*/
-//이건 가능
-function 함수2(x: nbumber | string) {
-    if(typeof x === 'number'){
-        return x * 2;
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
     }
 }
-
-type pokemon = [number, boolean];
-let bulbarsaur:pokemon = [001, true];
 ```
 
-> 함수에 타입 지정하기
+컴파일 옵션은 무조건 들어가야 한다. 컴파일 옵션 외에도 watchOption, typeAcquisition이 들어가야 하는데 오늘은 compilerOption만 정리하고 나중에 보강할 예정이다. 전체 설정은 (https://www.typescriptlang.org/tsconfig) 여기서 볼 수 있다.
 
-> Union Type
-| 연산자를 사용해서 두 가지 type을 지정할 수 있음
-any type : 어떤 자료 형태도 할당 가능. 하지만 타입 관련 에러를 막기 위해 typescript를 쓰기 때문에 남발하면 typescript 쓰는 이유가 사라짐
-unknown : any와 마찬가지로 모든 타입의 변수를 다 할당할 수 있음. 차이점은 unknown type은 어떤 자료가 들어가도 그대로 타입이 unknown임
+이렇게만 작성해도 잘 변환되고 잘 실행된다. 그런데 
 
-```TypeScript
-let 포켓몬: number | string = 'Bulbarsaur';
-let 포켓몬2: (number | string) = 2;
+complilerOptions에 들어갈 하위 키들을 강의자료를 참고해서 정리했다. 전체는 여기서 볼 수 있다. 
 
-let 포켓몬3: any = 'Venusaur';
-//오류 안남
-포켓몬3 = 3;
+> "target": 'es3', 'es5', 'es6' / 'es2015', 'es2016', 'es2017','es2018', 'es2019', 'es2020', 'es2021', 'es2022', 'esnext' 의 값을 가진다.
+>> es5로 변환한 파일을 열어보면 변수 선언에 죄다 var로 되어 있다. 현재 사용되는 es6 문법에서는 사용하지 말것을 권장하는 문법이기 때문에 해도 된다 하지 말아야 한다 이런 부분을 알아보려고 검색을 해봤는데 TypeScript 홈페이지의 tsconfig 항목에서 찾아볼 수 있다. 'ES6를 지원하는 환경이면 ES6가 좋은 선택이다'라고 하니 예전 문법으로 작성해도 큰 문제는 없다고 생각한다. 아마 하위 호환을 위해 예전 문법으로도 변환할 수 있도록 기능을 살려둔게 아닐까. 다만 JS쪽에서 가능하면 ES6 이후 문법 사용을 권장하고 있으니 디폴트 값은 es6로 해야겠다.
 
-let 포켓몬4: unknown = 4;
-//오류 남
-포켓몬4 + 1;
-```
-
-> 타입 확정하기
+"noImplicitAny" : true → any 타입이 발생할 경우 에러를 띄워준다.
+"strictNullChecks" : true → null, undefined에 뭔가 실행할 경우 에러를 띄워준다.

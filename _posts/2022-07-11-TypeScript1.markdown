@@ -51,8 +51,13 @@ vue 파일에서 타입스크립트 활용하려면
 > <script lang="ts">    
 > </script>    
 
+### TypeScript → JavaScript 자동변환
+작업 폴더에서 터미널 열고
+> tsc -w    
+실행
+
 ### tsconfig.json
-TypeScript 파일을 JavaScript로 변환할 때 어떻게 변환할 것인지 세부설정을 담은 파일
+TypeScript 파일을 JavaScript로 변환할 때 어떻게 변환할 것인지 세부설정을 담은 파일.
 
 ```TypeScript
 {
