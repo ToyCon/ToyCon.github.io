@@ -56,14 +56,3 @@ vue 파일에서 타입스크립트 활용하려면
 > tsc -w    
 실행
 
-### tsconfig.json
-TypeScript 파일을 JavaScript로 변환할 때 어떻게 변환할 것인지 세부설정을 담은 파일.
-
-```TypeScript
-{
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-    }
-}
-```
