@@ -5,29 +5,33 @@ date: 2022-07-13 17:30:00 +0900
 categories: TypeScript
 ---
 ### TypeScript에서 사용하는 Type
+JavaScript에서 사용하는 원시타입(primitive types)들은 TypeScript에도 모두 있다.
+>string    
+>number    
+>boolean    
+>null    
+>undefined    
+그런데 TypeScript의 사용 목적에 비춰서 생각해보면 null이나 undefined는 굳이 사용할 이유가 없다. Type을 엄격하게 지정해서 오류를 방지하기 위해 TypeScript를 쓰기 때문에, 아예 변수 선언이 되지 않아서 반환되는 null이나 선언해놓고 값을 입력하지 않아서 등장하는 undefined를 볼 이유가 없다. tsconfig.json에서도 옵션이 있었기 때문에 혹시라도 써야 할 일이 있다면 tsconfig.json부터 시작해서 많은 부분을 건드려야 한다.
 
-> TypeScript의 Types
-primitive types
-string
-number
-boolean
-null
-undefined
-> null undefined는 굳이 사용하지 않음
-굳이 타입을 지정할 필요가 없음. 변수를 선언할 때 변수형에 맞춰서 입력하면 자동으로 타입 지정됨
+TypeScript에서 추가로 사용하는 Type들도 있다.
+>union    
+>any    
+>unknown    
+이 타입들은 TypeScript에서 Type을 조금 더 편리하게 관리하기 위해서 사용하는 Type들이다.
 
-#### JavaScript의 Type
-원시 타입(primitive type)
-number
-string
-boolean
-undefined
-null
-symbol
+#### Type 지정하는 방법
+원시타입 입력
+> let 변수명: 타입 = 입력할 값(타입이 문자면 문자열, 숫자면 숫자)
 
-객체 타입(object / reference type)
-객체, 함수, 배열 등
+배열에 타입 지정
+> let 변수명: 타입[] = ['타입과 일치하는 값',...]
+두 개 이상의 타입을 동시에 넣어야 할 경우
+> let 변수명: (타입1 | 타입2)[] = ['타입1과 일치하는 값', '타입2와 일치하는 값',...]
 
+객체에 타입 지정
+> let pokemon : {키1 : 타입, 키2: 타입, ...} = {키1 : 값, 키2 : 값, ...}
+
+내용들을 참고해서 예제를 만들어 실험해봤다.
 
 ```TypeScript
 let 이름:string = 'Bulbarsaur';
