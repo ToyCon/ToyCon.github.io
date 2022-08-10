@@ -4,16 +4,7 @@ title: TypeScript Part 1-3
 date: 2022-07-13 17:30:00 +0900
 categories: TypeScript
 ---
-### JavaScript의 Type
-원시 타입(primitive type)
-number
-string
-boolean
-undefined
-null
-symbol
-객체 타입(object / reference type)
-객체, 함수, 배열 등
+### TypeScript에서 사용하는 Type
 
 > TypeScript의 Types
 primitive types
@@ -24,6 +15,19 @@ null
 undefined
 > null undefined는 굳이 사용하지 않음
 굳이 타입을 지정할 필요가 없음. 변수를 선언할 때 변수형에 맞춰서 입력하면 자동으로 타입 지정됨
+
+#### JavaScript의 Type
+원시 타입(primitive type)
+number
+string
+boolean
+undefined
+null
+symbol
+
+객체 타입(object / reference type)
+객체, 함수, 배열 등
+
 
 ```TypeScript
 let 이름:string = 'Bulbarsaur';

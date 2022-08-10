@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TypeScript Part 1-1
+title: TypeScript Part 1
 date: 2022-07-11 16:30:00 +0900
 category: TypeScript
 ---
