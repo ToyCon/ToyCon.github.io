@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu를 설치하고 나서 반드시 해야 할 것들
+title: Ubuntu CLI 명령어 정리
 date: 2022-07-29 17:30:00 +0900
 categories: OS
 ---
