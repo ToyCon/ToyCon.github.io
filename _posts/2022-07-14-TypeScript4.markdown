@@ -4,6 +4,36 @@ title: Narrowing과 Assertion
 date: 2022-07-14 21:35:00 +0900
 categories: TypeScript
 ---
+```TypeScript
+let 이름:string = 'Bulbarsaur';
+//이름 = 123; 컴파일할 때 오류가 뜬다.
+
+let 배열:string[] = ['Bulbarsaur','Ivysaur'];
+let 번호:{indexnum : number} = { indexnum: 1};
+
+type nameType = string | number;
+let 이름:nameType = 'Venusaur';
+
+function 함수명(x:number) : number {
+    return x*2;
+}
+
+//에러가 발생하는 함수
+/*function 함수명(x:number | string) {
+    return x*2;
+}*/
+//이건 가능
+function 함수2(x: nbumber | string) {
+    if(typeof x === 'number'){
+        return x * 2;
+    }
+}
+
+type pokemon = [number, boolean];
+let bulbarsaur:pokemon = [001, true];
+console.log(bulbarsaur);
+```
+
 # Narrowing & Assertion
 | 연산자를 사용해서 두 가지 type을 지정할 수 있음
 any type : 어떤 자료 형태도 할당 가능. 하지만 타입 관련 에러를 막기 위해 typescript를 쓰기 때문에 남발하면 typescript 쓰는 이유가 사라짐
