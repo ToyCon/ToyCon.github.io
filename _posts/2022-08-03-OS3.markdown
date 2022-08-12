@@ -34,9 +34,9 @@ Windows10이 설치된 단일디스크 SSD에, 저장용 HDD를 마찬가지로 
 3. 디스크 선택 → 초기화 실행
 >diskpart    
 >list disk(용량을 통해 디스크를 확인)    
->SEL DISK 2(list에서 확인한 초기화할 디스크를 선택. 헷갈리면 두 번 세번 확인하자)
->CLEAN(초기화)
->EXIT(diskpart 종료)
+>SEL DISK 2(list에서 확인한 초기화할 디스크를 선택. 헷갈리면 두 번 세번 확인하자)    
+>CLEAN(초기화)    
+>EXIT(diskpart 종료)    
 4. 디스크를 다시 할당하는 과정은 diskpart대신 디스크 관리에서 잡아주는게 편할 것이다.
 
 ### 후기
