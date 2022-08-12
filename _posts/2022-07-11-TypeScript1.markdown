@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TypeScript Part 1
+title: TypeScript 설치와 적용
 date: 2022-07-11 16:30:00 +0900
 category: TypeScript
 ---

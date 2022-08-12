@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Python Part 1
+title: Python 1
 date: 2022-07-25 16:30:00 +0900
 categories: Python
 ---
+ExpressJS를 공부하다보니 연관검색어로 Django라는 프레임워크가 자주 등장했다. 부트캠프중에는 코스 과정에서 배우는 내용 쫓아가기도 힘들어서 별 생각이 없었는데 맨날 뜨길래 영상을 한번 보니까 Python을 기반으로 하는 프레임워크라는 사실을 알게 되었다. 마침 지금 학습하는 사이트에서 무료 강의를 풀길래 Python을 이번 기회에 접해보려고 한다.
+
 ### Ubuntu와 Python
 우분투는 Python을 내장. 20.04 기준으로 python3 내장되어있고 지금 쓰고있는 22.04에서도 python이 기본 설치되어있음. 현재 설치되어 있는 python은 3.10.4 버전인데 apt 업데이트를 하면서 자동적으로 업데이트가 된 모양.
 > python3 --version (버전 확인)    
