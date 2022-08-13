@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 알고리즘
-date: 2022-08-05 15:35:00 +0900
+title: 알고리즘1
+date: 2022-08-05 18:00:00 +0900
 categories: Algorithm
 ---
 ### 작성중
