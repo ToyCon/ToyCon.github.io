@@ -62,7 +62,10 @@ let 포켓몬4: number | string[] = ['7', 'Squirtle'];
 어떤 자료 형태도 할당 가능한 타입이다. 타입 관련 에러를 막기 위해 typescript를 쓴다는 사실을 생각해보면 any type 남용은 typescript를 쓰는 이유를 스스로 없애버리는 셈이다. 버그 체크 등 반드시 필요한 경우를 제외하고는 쓰지 말아야 한다.
 
 #### Unknown Type
-any와 마찬가지로 모든 타입의 변수를 다 할당할 수 있는 unknown 타입이 있다. any와 다른 점은 unknown type은 어떤 자료가 들어가도 그대로 타입이 unknown이다.
+any와 마찬가지로 모든 타입의 변수를 다 할당할 수 있는 unknown 타입이 있다. any와 마찬가지로 모든 타입의 값을 할당할 수 있지만 몇가지 다른 점이 있다.
+1. unknown 타입으로 선언된 변수는 any 타입이나 unknown 타입으로 선언된 변수를 제외하고 다른 타입으로 선언된 변수에 할당할 수 없다
+2. unknown 타입으로 선언된 변수는 해당 변수가 가지는 원래 타입의 메소드를 호출하거나 프로퍼티에 접근할 수 없다(any 타입은 된다)
+3. unknown 타입으로 선언했지만 narrowing이나 assertion을 통해 원래 2번 문제를 해결할 수 있다.
 
 ```TypeScript
 let 포켓몬: number | string = 'Bulbarsaur';
