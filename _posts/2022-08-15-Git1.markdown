@@ -16,9 +16,6 @@ categories: git
 > sudo apt install git    
 3. git이 설치되어 있는지 확인한다
 > git 또는 git --version    
-4. 사용자 정보를 입력한다.
-> git config --global user.name 사용자이름    
-> git config --global user.mail 이메일주소    
 
 #### Windows
 <details>
@@ -41,3 +38,9 @@ categories: git
 5. vscode 실행 → shift + command +p 누른 뒤 Install "code" from VSCode commander 찾아서 클릭
 6. 터미널 다시 켜서 git config --global core.editor "code --wait" 실행
 </details>
+
+#### git 기본설정
+git 설치 끝난걸 확인했고 vscode도 설치했다면 git에서 사용할 사용자 정보를 입력한다.
+> git config --global user.name 사용자이름    
+> git config --global user.mail 이메일주소    
+나같은 경우 여기서 써야하는 '사용자 이름이 뭘까'를 좀 진지하게 고민했다. 브라우저로 깃허브에 로그인하면 Profile을 편집할 수 있는데 profile에서 name과 화면 우측 상단의 계정정보에서 알려주는 ID가 별개다. 나는 프로필네임이 아니라 ID를 사용자 이름으로 등록했다. ID와 사용자이름이 일치했을 때 직관적으로 알아보기 쉬웠다. 이건 선택의 영역이다.
