@@ -30,6 +30,7 @@ TypeScript 파일은 nodejs에서 바로 실행되지 않음. 따라서 JS로 �
 #### React에 적용
 <details>
 <summary>React 프로젝트에 적용</summary>
+
 작업 폴더에서 터미널 열고
 npm install --save typescript @types/node @types/react @types/react-dom @types jest
 입력
@@ -37,6 +38,7 @@ npm install --save typescript @types/node @types/react @types/react-dom @types j
 
 <details>
 <summary>새로운 React 프로젝트 생성</summary>
+
 프로젝트를 생성할 작업 폴더에서 터미널 열고
 npx create-react-app my-app --template typescript
 입력

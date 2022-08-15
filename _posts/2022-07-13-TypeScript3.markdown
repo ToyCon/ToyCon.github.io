@@ -65,7 +65,7 @@ let 포켓몬4: number | string[] = ['7', 'Squirtle'];
 any와 마찬가지로 모든 타입의 변수를 다 할당할 수 있는 unknown 타입이 있다. any와 마찬가지로 모든 타입의 값을 할당할 수 있지만 몇가지 다른 점이 있다.
 1. unknown 타입으로 선언된 변수는 any 타입이나 unknown 타입으로 선언된 변수를 제외하고 다른 타입으로 선언된 변수에 할당할 수 없다
 2. unknown 타입으로 선언된 변수는 해당 변수가 가지는 원래 타입의 메소드를 호출하거나 프로퍼티에 접근할 수 없다(any 타입은 된다)
-3. unknown 타입으로 선언했지만 narrowing이나 assertion을 통해 원래 2번 문제를 해결할 수 있다.
+3. unknown 타입으로 선언했지만 narrowing이나 assertion을 통해 2번 문제를 해결할 수 있다.
 
 ```TypeScript
 let 포켓몬: number | string = 'Bulbarsaur';
