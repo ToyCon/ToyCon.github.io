@@ -1,7 +1,13 @@
 ---
 layout: post
-title: 알고리즘2
+title: 시간복잡도
 date: 2022-08-05 18:00:00 +0900
 categories: Algorithm
 ---
 ### 작성중
+메모리 관련 > 피보나치 수열에 오차가 생긴다?
+
+https://www.youtube.com/watch?v=-GsrYvZoAdA&t=21s
+그래서 이영상 보고 알앗음
+
+메모리 관련 정리 해봄
