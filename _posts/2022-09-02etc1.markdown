@@ -1,0 +1,10 @@
+---
+layout: post
+title: Jekyll 블로그 다듬기
+date: 2022-08-23 18:00:00 +0900
+categories: etc
+---
+### 작성중
+
+### 참조한 문서들
+https://jeesub.github.io/blog/jekyll-%ED%85%8C%EB%A7%88-%EB%B0%94%EA%BE%B8%EA%B8%B0/
