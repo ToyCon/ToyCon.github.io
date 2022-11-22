@@ -1,0 +1,15 @@
+---
+layout: post
+title: 삼총사
+date: 2022-11-24 22:00:00 +0900
+categories: practice
+---
+### 삼총사    
+https://school.programmers.co.kr/learn/courses/30/lessons/131705    
+    
+#### 변수    
+    
+    
+#### 순서    
+
+#### 코드
