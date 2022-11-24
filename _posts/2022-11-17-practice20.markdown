@@ -1,0 +1,16 @@
+---
+layout: post
+title: 숫자 문자열과 영단어
+date: 2022-11-17 23:30:00 +0900
+categories: etc
+---
+### 숫자 문자열과 영단어    
+https://school.programmers.co.kr/learn/courses/30/lessons/81301    
+    
+#### 변수    
+숫자 또는 영문자로 구성된 문자열 s    
+반환할 결과값은 숫자여야 함(Number type)    
+    
+#### 순서    
+
+#### 코드
