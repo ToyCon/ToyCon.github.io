@@ -4,7 +4,7 @@ title: OX퀴즈
 date: 2022-11-23 23:20:00 +0900
 categories: practice
 ---
-###OX퀴즈     
+### OX퀴즈     
 https://school.programmers.co.kr/learn/courses/30/lessons/120907    
     
 #### 변수    
