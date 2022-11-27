@@ -4,7 +4,7 @@ title: OX퀴즈
 date: 2022-11-23 23:20:00 +0900
 categories: practice
 ---
-### OX퀴즈     
+### OX퀴즈    
 https://school.programmers.co.kr/learn/courses/30/lessons/120907    
     
 #### 변수    
@@ -12,17 +12,17 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120907
 연산자는 +와 - 중 하나    
     
 #### 순서    
-수식이 모두 문자열로 구성되어 있다. 문자열과 관련된 메서드를 활용할 수 있도록 정리했다.
-1. 정답을 담을 상수 result를 선언하고 빈 배열 할당하기
-2. i를 사용해서 반복문
-3. 수식을 담을 상수 yfx를 선언하고 split메서드를 사용해서 공백으로 나누어 저장하기
-4. 조건문을 활용해서 +와 -의 경우를 나눈다. 
-5. 내부에 추가 조건문으로 숫자로 바꾼 yfx[0] + yfx[2]를 yfx[4]와 비교
-6. true일 경우 문자열 "O"를 result 배열에 추가, 아닐 경우 "X"를 추가
-7. 5, 6과 같은 방식으로 yfx[0] - yfx[2]를 비교하여 result에 결과 추가
-8. result를 반환 
+수식이 모두 문자열로 구성되어 있다. 문자열과 관련된 메서드를 활용할 수 있도록 정리했다.    
+1. 정답을 담을 상수 result를 선언하고 빈 배열 할당하기    
+2. i를 사용해서 반복문    
+3. 수식을 담을 상수 yfx를 선언하고 split메서드를 사용해서 공백으로 나누어 저장하기    
+4. 조건문을 활용해서 +와 -의 경우를 나눈다.    
+5. 내부에 추가 조건문으로 숫자로 바꾼 yfx[0] + yfx[2]를 yfx[4]와 비교    
+6. true일 경우 문자열 "O"를 result 배열에 추가, 아닐 경우 "X"를 추가    
+7. 5, 6과 같은 방식으로 yfx[0] - yfx[2]를 비교하여 result에 결과 추가    
+8. result를 반환    
 
-#### 코드
+#### 코드    
 ```JavaScript
 function solution(quiz) {
     const result = [];
