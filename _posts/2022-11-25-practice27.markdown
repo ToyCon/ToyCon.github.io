@@ -1,15 +1,52 @@
 ---
 layout: post
-title: 
+title: 입국심사
 date: 2022-11-25 23:20:00 +0900
 categories: practice
 ---
-###     
-    
+### 입국심사    
+https://school.programmers.co.kr/learn/courses/30/lessons/43238    
     
 #### 변수    
-    
+입국 심사를 기다리는 사람의 수 n    
+각 심사관이 한 명을 심사하는데 걸리는 시간이 담긴 배열 times    
     
 #### 순서    
+심사관마다 심사하는 시간이 다르므로, 최대로 걸리는 시간은 '시간이 가장 오래 걸리는 심사관'이 '모든 승객을 심사하는 경우'에 걸리는 시간이다. 이 값을 넘어가진 않으므로, 범위 안에서 심사 횟수가 승객 수에 가장 근접하면서 동시에 가장 시간이 적게 걸리는 경우를 찾아서 반환한다.    
+1. times 배열을 sort 메소드를 통해 오름차순으로 정렬    
+2. 결과를 담을 변수 result를 선언하고 0을 할당    
+3. 탐색 범위를 정할 변수 left, right를 선언하고 left에 0, right에 times의 마지막 요소의 값에 n을 곱한 값을 할당    
+4. left와 right의 값이 같아질때까지 반복문을 실행    
+5. 중간값을 담을 변수 mid를 선언하고 left와 right의 평균값을 저장, 사람을 소수점으로 나눌 수 없으므로 정수만 취함    
+6. 심사관의 최대 심사횟수를 담을 변수 max를 선언하고 0을 할당    
+7. 심사관 별 평균 심사 인원을 계산하기 위해 times 배열에 대해서 내부 반복문 선언    
+8. count에 심사관별 심사 인원을 더함(중간값을 심사관이 심사하는데 걸리는 시간으로 나눈 몫의 정수)     
+9. max가 n보다 크거나 같을 경우 심사를 종료할 수 있으므로 result에 mid를 할당, right에 mid - 1을 할당하여 탐색 범위를 줄인다    
+10. 9의 조건을 만족하지 못할 경우 left에 mid + 1을 할당    
+11. result를 반환
 
 #### 코드
+7~8 과정을 for 반복문 대신 forEach 메서드를 사용해서 줄였다.
+```JavaScript
+function solution(n, times) {
+    times.sort((a, b) => a - b);
+    let left = 0;
+    let right = n * times[times.length - 1];
+    let result = 0;
+    while(left <= right){
+        let mid = Math.floor((left + right) / 2);
+        let max = 0;
+
+        times.forEach((e) => max = max + Math.floor(mid / e));
+
+        if(max >= n) {
+            result = mid;
+            right = mid - 1;
+        } else {
+            left = mid + 1;
+        }
+    }
+    
+    return result;
+}
+```
