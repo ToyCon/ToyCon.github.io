@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 명예의 전당
-date: 2022-11-28 12:20:00 +0900
+date: 2022-11-28 13:55:00 +0900
 categories: practice
 ---
 ### 명예의 전당    
@@ -23,10 +23,11 @@ https://school.programmers.co.kr/learn/courses/30/lessons/138477
 6. honor 배열의 첫 번째 요소를 제거    
 7. honor 배열에 day를 추가    
 8. honor 배열을 오름차순으로 정렬    
-9. 조건문을 나와서 result에 honor[0]을 추가        
+9. 조건문을 나와서 result에 honor[0]을 추가    
 10. while 구문 밖에서 result를 반환    
     
 #### 코드    
+완전히 중복되는 코드를 보고 겹치는 부분을 합쳐보려고 했는데 잘 안됐다. 고민해봐야겠다.    
 ```JavaScript
 function solution(k, score) {
     const honor = [];
@@ -36,7 +37,7 @@ function solution(k, score) {
         let day = score.shift();
         
         if(honor.length < k) {
-            honor.push(day)
+            honor.push(day);
             honor.sort((a, b) => a - b);
         } else {
             if(day > honor[0]) {
