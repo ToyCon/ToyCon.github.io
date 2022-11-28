@@ -4,23 +4,23 @@ title: Python 1
 date: 2022-07-25 16:30:00 +0900
 categories: Python
 ---
-ExpressJS를 공부하다보니 연관검색어로 Django라는 프레임워크가 자주 등장했다. 부트캠프중에는 코스 과정에서 배우는 내용 쫓아가기도 힘들어서 별 생각이 없었는데 맨날 뜨길래 영상을 한번 보니 Python을 기반으로 하는 프레임워크라는 사실을 알게 되었다. 마침 지금 학습하는 사이트에서 무료 강의를 풀길래 Python을 이번 기회에 접해보려고 한다.
-
-### Ubuntu와 Python
-우분투는 Python을 내장. 20.04 기준으로 python3 내장되어있고 지금 쓰고있는 22.04에서도 python이 기본적으로 탑재되어있다. 현재 설치되어 있는 python은 3.10.4 버전인데 apt 업데이트를 하면서 자동적으로 업데이트가 된 모양이다.
+ExpressJS를 공부하다보니 연관검색어로 Django라는 프레임워크가 자주 등장했다. 부트캠프중에는 코스 과정에서 배우는 내용 쫓아가기도 힘들어서 별 생각이 없었는데 맨날 뜨길래 영상을 한번 보니 Python을 기반으로 하는 프레임워크라는 사실을 알게 되었다. 마침 지금 학습하는 사이트에서 무료 강의를 풀길래 Python을 이번 기회에 접해보려고 한다.    
+    
+### Ubuntu와 Python    
+우분투는 Python을 내장. 20.04 기준으로 python3 내장되어있고 지금 쓰고있는 22.04에서도 python이 기본적으로 탑재되어있다. 현재 설치되어 있는 python은 3.10.4 버전인데 apt 업데이트를 하면서 자동적으로 업데이트가 된 모양이다.    
 > python3 --version (버전 확인)    
 > sudo apt-get update (apt에서 python 업데이트가 있는지 확인)    
 > sudo apt-get upgrade python3    
-
-다만 python 패키지를 관리하는 pip가 설치되어 있지 않았다. 그래서 설치하려는데 apt에서 알려주는 명령어대로 실행해도 'pip3 패키지를 찾을 수 없습니다'라는 에러 메시지가 나와서 바로 검색. 오류가 있는 모양이다. 명령어를 모아서 실행(출처 : https://hatpub.tistory.com/113)
+    
+다만 python 패키지를 관리하는 pip가 설치되어 있지 않았다. 그래서 설치하려는데 apt에서 알려주는 명령어대로 실행해도 'pip3 패키지를 찾을 수 없습니다'라는 에러 메시지가 나와서 바로 검색. 오류가 있는 모양이다. 명령어를 모아서 실행(출처 : https://hatpub.tistory.com/113)    
 > pip3 --version    
 > sudo apt-get install pip3    
 > E: pip3 패키지를 찾을 수 없습니다    
-
+    
 > sudo add-apt-repository universe    
 > sudo apt-get update    
-> sudo apt-get install python3-pip
-
-다른 해결책도 찾았는데 python3-setuptools 를 설치하는 방법을 알려줬다. 일단 위의 방법으로 설치를 했기 때문에 기록만 해둔다. python을 본격적으로 다룬다면 이 방법이 더 좋을 것 같다.(https://aisiunme.github.io/ubuntu/2018/09/12/troubleshooting-ubuntu-pip-install/)
-
+> sudo apt-get install python3-pip    
+    
+다른 해결책도 찾았는데 python3-setuptools 를 설치하는 방법을 알려줬다. 일단 위의 방법으로 설치를 했기 때문에 기록만 해둔다. python을 본격적으로 다룬다면 이 방법이 더 좋을 것 같다.(https://aisiunme.github.io/ubuntu/2018/09/12/troubleshooting-ubuntu-pip-install/)    
+    
 그리고 예제파일을 하나 만들어서 실행해봤는데 cli상에서 실행 명령어가 python3. 아마 mac 명령어를 똑같이 사용하는 듯 하다.
