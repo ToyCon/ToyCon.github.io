@@ -1,0 +1,16 @@
+---
+layout: post
+title: 과일 장수
+date: 2022-11-28 13:55:00 +0900
+categories: practice
+---
+### 과일 장수    
+https://school.programmers.co.kr/learn/courses/30/lessons/135808    
+    
+#### 변수    
+
+    
+#### 순서    
+
+    
+#### 코드    
