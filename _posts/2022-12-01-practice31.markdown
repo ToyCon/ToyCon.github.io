@@ -1,16 +1,61 @@
 ---
 layout: post
-title: 
-date: 2022-11-28 13:55:00 +0900
+title: 문자열 나누기
+date: 2022-12-01 23:55:00 +0900
 categories: practice
 ---
-###     
-    
+### 문자열 나누기    
+https://school.programmers.co.kr/learn/courses/30/lessons/140108    
     
 #### 변수    
-
+문자열 s    
     
 #### 순서    
-
+같은 글자가 나오는 횟수를 카운트 해야 하는데, 한번 카운트가 끝나면 남은 문자열을 가지고 같은 과정을 반복해야 해서 이중 반복문을 써야 했다. 이중 반복문을 쓰더라도 한번 큰 반복 구간이 나온다면 나머지 문자열에서 글자수가 크게 줄어들기 때문에 문제가 없다고 생각하고 처음 생각한대로 정리했다.
+    
+1. 결과를 담을 상수 result를 선언하고 빈 배열 할당    
+2. while 반복문 진입(s.length > 0)    
+3. 변수 x를 선언하고 s[0] 할당    
+4. 변수 sameCount를 선언하고 0 할당    
+5. 변수 diffCount를 선언하고 0 할당    
+6. 변수 seperator를 선언하고 빈 문자열 할당    
+7. for 반복문 진입(i = 0; i < s.length; i++)    
+8. 조건문 x === s[i] 일 때 sameCount++, 아니면 diffCount++    
+9. 조건문 sameCount === diffCount 일 때 seperator에 s.slice(0, i) 할당    
+10. 같은 조건문 내부에서 result.push(seperator)    
+11. s = s.slice(i); 이후 break    
+12. while 구문을 빠져 나온 후 result.length 반환    
     
 #### 코드    
+문제에서 제시한 '두 횟수가 다른 상태에서 더 이상 읽을 글자가 없다면, 역시 지금까지 읽은 문자열을 분리하고 종료합니다'에 해당하는 탈출조건이 없는데 코드가 통과가 됐다. 해당 코드를 추가해서 다시 테스트해봐야겠다. 
+```JavaScript
+function solution(s) {
+
+  const res = [];
+
+  while(s.length > 0) {
+
+    let x = s[0];
+    let sC = 0;
+    let dC = 0;
+    let sep = '';
+
+    for (i = 0; i < 10000; i++) {
+      if (x === s[i]) {
+        sC++;
+      } else { 
+        dC++;
+      }
+
+      if (sC !== 0 && dC !== 0 && sC === dC) {
+        sep = s.slice(0, i + 1);
+        res.push(sep);
+        s = s.slice(i + 1);
+        break;
+        }  
+      }
+  }
+
+  return res.length;
+}
+```
