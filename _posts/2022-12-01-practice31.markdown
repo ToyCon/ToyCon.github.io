@@ -52,8 +52,8 @@ function solution(s) {
         res.push(sep);
         s = s.slice(i + 1);
         break;
-        }  
-      }
+      }  
+    }
   }
 
   return res.length;
