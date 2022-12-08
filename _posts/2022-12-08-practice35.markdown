@@ -1,0 +1,16 @@
+---
+layout: post
+title: 가장 가까운 글자
+date: 2022-12-08 23:35:00 +0900
+categories: practice
+---
+### 가장 가까운 글자    
+https://school.programmers.co.kr/learn/courses/30/lessons/142086    
+    
+#### 변수    
+문자열 s    
+    
+#### 순서    
+작성중    
+    
+#### 코드    
