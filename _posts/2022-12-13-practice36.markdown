@@ -19,7 +19,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120840
 4. arr[balls] / (arr[balls - shares] * arr[shares])를 결과값으로 반환
     
 #### 코드    
-문제에서 balls와 shares의 범위를 1에서 30까지로 정해놓았다. 이 부분을 고려해서 반복문의 범위를 30까지로 수정했다. 추가로 몇 개의 테스트를 통과하지 못해서 직접 console.log를 넣고 node로 테스트해보니 23부터 과학적 표기법으로 숫자가 커지는 것을 확인했다. 구문에 bigint를 넣어서 문제를 해결했다.
+문제에서 balls와 shares의 범위를 1에서 30까지로 정해놓았다. 이 부분을 고려해서 반복문의 범위를 30까지로 수정했다. 추가로 몇 개의 테스트를 통과하지 못해서 직접 console.log를 넣고 개발자 도구에서 테스트해보니 23부터 과학적 표기법으로 숫자가 커지는 것을 확인했다. BigInt를 넣어서 문제를 해결했다.
 ```JavaScript
 function solution(balls, share) {
     const arr = [BigInt(1), BigInt(1)];
