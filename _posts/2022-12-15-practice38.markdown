@@ -1,0 +1,24 @@
+---
+layout: post
+title: 세균 증식
+date: 2022-12-15 20:00:00 +0900
+categories: practice
+---
+### 세균 증식    
+https://school.programmers.co.kr/learn/courses/30/lessons/120910    
+    
+#### 변수    
+세균의 마릿수 n    
+경과한 시간 t    
+    
+#### 순서    
+1시간마다 두 배로 증식하기 때문에 t만큼의 시간이 지나면 2^t을 곱하면 된다. 간단한 문제이기 때문에 코드를 최대한 줄이는 방법을 고민했다.    
+1. n * (2 ** t)를 반환    
+    
+#### 코드    
+쉽게 풀렸는데 다른 답을 확인해보니 처음보는 연산자를 통해 더 짧게 줄일 수 있었다. 연산자도 진지하게 공부를 해봐야겠다. 늘 쉬운 문제에서도 모르는 게 나온다.    
+```JavaScript
+function solution(array) {
+  return n * (2 ** t);
+}
+```
