@@ -1,0 +1,16 @@
+---
+layout: post
+title: 정수 제곱근 판별
+date: 2022-12-29 23:55:00 +0900
+categories: practice
+---
+### 정수 제곱근 판별    
+https://school.programmers.co.kr/learn/courses/30/lessons/12934    
+    
+#### 변수    
+   
+    
+#### 순서    
+    
+    
+#### 코드    
