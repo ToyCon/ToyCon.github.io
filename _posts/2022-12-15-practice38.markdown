@@ -18,7 +18,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120910
 #### 코드    
 쉽게 풀렸는데 다른 답을 확인해보니 처음보는 연산자를 통해 더 짧게 줄일 수 있었다. 연산자도 진지하게 공부를 해봐야겠다. 늘 쉬운 문제에서도 모르는 게 나온다.    
 ```JavaScript
-function solution(array) {
+function solution(n, t) {
   return n * (2 ** t);
 }
 ```
