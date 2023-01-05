@@ -1,0 +1,19 @@
+---
+layout: post
+title: 개인정보 수집 유효기간
+date: 2023-01-05 23:35:00 +0900
+categories: practice
+---
+### 개인정보 수집 유효기간    
+https://school.programmers.co.kr/learn/courses/30/lessons/150370    
+    
+#### 변수    
+날짜를 담은 문자열 today    
+약관의 유효기간을 담은 문자열 배열 terms    
+수집된 개인정보를 담은 문자열 배열 privacies    
+각 달은 28일까지만 계산
+    
+#### 순서    
+작성중    
+    
+#### 코드    
