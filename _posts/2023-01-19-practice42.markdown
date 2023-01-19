@@ -1,0 +1,16 @@
+---
+layout: post
+title: 안전지대
+date: 2023-01-19 23:53:00 +0900
+categories: practice
+---
+### 안전지대    
+https://school.programmers.co.kr/learn/courses/30/lessons/120866    
+    
+#### 변수    
+   
+    
+#### 순서    
+    
+    
+#### 코드    
