@@ -1,0 +1,16 @@
+---
+layout: post
+title: 피자 나눠 먹기(3)
+date: 2023-01-25 23:58:00 +0900
+categories: practice
+---
+### 피자 나눠 먹기(3)    
+https://school.programmers.co.kr/learn/courses/30/lessons/120816    
+    
+#### 변수    
+   
+    
+#### 순서    
+    
+    
+#### 코드    
