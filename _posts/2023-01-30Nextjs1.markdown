@@ -1,13 +1,20 @@
 ---
 layout: post
-title: Next.js 1
+title: Next.js 학습기록
 date: 2023-01-30 22:10:00 +0900
 categories: Next.js
 ---
 ### Next.js    
+서버 사이드 렌더링 + 프레임워크    
+리액트 기반인데 SSR 어떻게 구현했는지 신기
+최근 사용하는 기업이 많이 보임    
+SSR > SEO 유리 > 검색 노출에 유리하다고 한다면 나같아도 쓸듯?
+
 #### 설치    
 1. node.js 설치    
 2. 작업 폴더에서 npx create-next-app 실행    
+
+
 
 
 
