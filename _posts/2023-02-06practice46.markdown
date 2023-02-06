@@ -1,0 +1,16 @@
+---
+layout: post
+title: 다음에 올 숫자
+date: 2023-02-06 23:37:00 +0900
+categories: practice
+---
+### 다음에 올 숫자    
+https://school.programmers.co.kr/learn/courses/30/lessons/120924    
+    
+#### 변수    
+   
+    
+#### 순서    
+    
+    
+#### 코드    
