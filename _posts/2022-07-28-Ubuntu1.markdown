@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu를 설치하고 나서 반드시 해야 할 것들
 date: 2022-07-28 15:00:00 +0900
-categories: OS
+categories: Ubuntu
 ---
 구글에 검색을 해보면 'ubuntu를 설치하고 나서 해야 할 것들' 이런 내용으로 올라오는 문서나 youtube 영상이 많이 있다. 부트캠프를 통해서 linux와 친해졌다고 생각하지만 아직도 ubuntu가 거리를 좀 두는것 같아서 내가 필요한 것들 위주로 정리해둔다.
 
