@@ -8,9 +8,24 @@ categories: practice
 https://school.programmers.co.kr/learn/courses/30/lessons/120815    
     
 #### 변수    
-   
+피자를 나눠먹을 사람의 수 n    
+1 ≤ n ≤ 100    
     
 #### 순서    
-    
+피자를 남기지 않고 먹어야 하는 조건이다. (1)과 마찬가지로 큰 수의 계산을 요구하지 않으므로 최대한 간단한 계산식을 고민해 봤는데 수를 올려가면서 나머지를 0으로 맞춰야 하므로 이 경우는 반복문을 써야 한다고 판단했다.    
+1. 변수 res를 선언하고 1 할당    
+2. while 반복문 진입(res % n !== 0)    
+3. res++    
+4. res를 반환
     
 #### 코드    
+res가 피자 판수를 반환하기 때문에 조건문에 조각수를 곱해줬다.   
+```JavaScript
+function solution(n) {
+    let res = 1;
+    while((res * 6) % n !== 0) {
+        res++;
+    }
+    return res;
+}
+```
