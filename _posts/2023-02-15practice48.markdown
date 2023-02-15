@@ -1,0 +1,16 @@
+---
+layout: post
+title: 하샤드 수
+date: 2023-02-15 19:52:00 +0900
+categories: practice
+---
+### 하샤드 수    
+https://school.programmers.co.kr/learn/courses/30/lessons/12947    
+    
+#### 변수    
+작성 중    
+    
+#### 순서    
+    
+    
+#### 코드    
