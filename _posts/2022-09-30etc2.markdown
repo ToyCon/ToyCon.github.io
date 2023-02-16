@@ -1,7 +1,11 @@
 ---
 layout: post
-title: HTTP
+title: Truthy와 Falsy
 date: 2022-09-30 18:00:00 +0900
 categories: etc
 ---
-### 작성중
+### true와 false
+
+### Truthy와 falsy
+
+### Truthy한 값과 Falsy한 값
