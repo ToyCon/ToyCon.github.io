@@ -8,9 +8,22 @@ categories: practice
 https://school.programmers.co.kr/learn/courses/30/lessons/120816    
     
 #### 변수    
-   
+피자 조각 수 slice    
+피자를 먹는 사람의 수 n    
     
 #### 순서    
-    
+인당 최소 한 조각 이상을 먹으면 되므로 조각의 수 * 피자의 수가 인원수보다 많기만 하면 된다. 최대한 간결하게 반환할 수 있는 방법을 고민했다.    
+1. 변수 res를 선언하고 1을 할당    
+2. while(res * slice < n)    
+3. res++    
+4. res를 반환
     
 #### 코드    
+숫자에 올림을 적용하는 ceil 메서드가 조금 더 간단했다. 항상 메서드 적용을 생각해야겠다.    
+```JavaScript
+function solution(slice, n) {
+    let res = 1;
+    while(res * slice < n) res++
+    return res;
+}
+```
