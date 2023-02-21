@@ -14,10 +14,10 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120842
 #### 순서    
 메서드를 통해 접근해보려고 했는데, 적당한 메서드도 방법도 찾지 못했다. 평범하게 반복문을 사용하는 방식으로 풀었다.    
 1. 상수 res 선언하고 빈 배열 할당    
-2. 변수 arr 선언하고 빈 배열 할당
+2. 변수 arr 선언하고 빈 배열 할당    
 3. while 반복문(num_list.length)    
 4. num_list의 첫 번째 요소를 shift로 제거하고 arr에 push로 추가    
-5. if(arr. length === n) res에 arr을 push로 추가하고 arr에 다시 빈 배열 할당
+5. if(arr. length === n) res에 arr을 push로 추가하고 arr에 다시 빈 배열 할당    
 6. res를 반환    
     
 #### 코드    
