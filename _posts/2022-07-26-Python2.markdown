@@ -4,81 +4,81 @@ title: Python 2
 date: 2022-07-26 21:30:00 +0900
 categories: Python
 ---
-### Python 기본문법
+### Python 기본문법    
 #### 1. print    
-변수를 선언하고 변수에 값을 할당해서 그 값을 가지고 계산을 하거나 유의미한 결과를 만들어내는 과정은 JavaScript와 동일. 다만 결과를 보고 싶을 때 JavaScript는 console 명령어를 썼는데 Python은 print를 쓴다. JS와 차이가 나는 부분은 값을 입력할 때 값에 사칙연산이 된다. JS의 경우 string 타입에 숫자를 곱하면 NaN이 되는데 Python은 그냥 변수를 해당 횟수만큼 출력해 줌. 이런 부분은 JS를 기준으로 생각하는 내 입장에서는 혼동하기 쉽다.
-
-Python
+변수를 선언하고 변수에 값을 할당해서 그 값을 가지고 계산을 하거나 유의미한 결과를 만들어내는 과정은 JavaScript와 동일. 다만 결과를 보고 싶을 때 JavaScript는 console 명령어를 썼는데 Python은 print를 쓴다. JS와 차이가 나는 부분은 값을 입력할 때 값에 사칙연산이 된다. JS의 경우 string 타입에 숫자를 곱하면 NaN이 되는데 Python은 그냥 변수를 해당 횟수만큼 출력해 줌. 이런 부분은 JS를 기준으로 생각하는 내 입장에서는 혼동하기 쉽다.    
+    
+Python    
 ```Pyhton
 print('Bulbarsaur' * 2)
 ```
 > BulbarsaurBulbarsaur    
-
-JavaScript
+    
+JavaScript    
 ```JavaScript
 console.log('Bulbarsaur' * 2)
 console.log('Bulbarsaur', 'Bulbarsaur')
 ```
 > NaN    
 > Bulbarsaur Bulbarsaur    
-
+    
 #### 2. 변수선언    
-JavaScript처럼 var, let, const 없이 그냥 변수이름 = 변수에 넣을 값
-
-Python
+JavaScript처럼 var, let, const 없이 그냥 변수이름 = 변수에 넣을 값    
+    
+Python    
 ```Pyhton
 bulbar = 1
 print(bulbar)
 ```
 > 1    
-
-JavaScript
+    
+JavaScript    
 ```JavaScript
 let bulbar = 1
 console.log(typeof bulbar)
 console.log(bulbar)
 ```
 > number    
-> 1
-
+> 1    
+    
 #### 3. 인덱싱    
-글자 뒤에 [] 붙여서 일부만 출력 가능. 이건 JavaScript와 거의 동일한데 조금 더 편리함. 일부 문자를 가져오는 경우 JS라면 slice 메서드를 써야 함.
-
-Python
+글자 뒤에 [] 붙여서 일부만 출력 가능. 이건 JavaScript와 거의 동일한데 조금 더 편리함. 일부 문자를 가져오는 경우 JS라면 slice 메서드를 써야 함.    
+    
+Python    
 ```Pyhton
 print('bulbarsaur'[1])
 pokemon = 'bulbarsaur'
 print(pokemon[0:5])
 ```
 > u    
-> bulba
-
-JavaScript
+> bulba    
+    
+JavaScript    
 ```JavaScript
 let pokemon = 'bulbarsaur'
 console.log(pokemon[2])
 console.log(pokemon.slice(0, 5))
 ```
 > l    
-> bulba
-
-#### 4. 들여쓰기(indent)
+> bulba    
+    
+#### 4. 들여쓰기(indent)    
 Python은 중괄호로 범위를 지정하지 않고 들여쓰기를 문법의 기본으로 채용함. 따라서 들여쓰기를 멋대로 하면 안된다. 반복문처럼 같은 범위 안에서 여러줄 코드를 실행해야 할 경우 들여쓰기가 일치해야 한다. 다르면 코드 실행이 이상해짐.    
-
-#### 5. 함수 선언
-JS에서 function 함수명() {} 이렇게 선언하는것과 비슷함. Python은 def를 사용. 중괄호 대신 들여쓰기로 코드 범위 정하는 건 계속 생각할것.
+    
+#### 5. 함수 선언    
+JS에서 function 함수명() {} 이렇게 선언하는것과 비슷함. Python은 def를 사용. 중괄호 대신 들여쓰기로 코드 범위 정하는 건 계속 생각할것.    
 ```Pyhton
 > def 함수명() :    
 > &nbsp;&nbsp;실행할코드    
 ```
-
-뭔가 값을 집어넣어서 연산을 하거나 특정 값을 얻고 싶으면
+    
+뭔가 값을 집어넣어서 연산을 하거나 특정 값을 얻고 싶으면    
 ```Pyhton
 > def 함수명(파라미터) :    
 > &nbsp;&nbsp;실행할코드    
 > &nbsp;&nbsp;return 결과값    
 ```
-
-#### 6. 주석처리
-블록 단위는 작은 따옴표 세개(''')
-행 단위는 # 사용
+    
+#### 6. 주석처리    
+블록 단위는 작은 따옴표 세개(''')    
+행 단위는 # 사용    
