@@ -21,7 +21,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120842
 6. res를 반환    
     
 #### 코드    
-다른 사람들의 답변을 봤는데 혹시나가 역시나… splice라는 메서드를 통해서 상당히 쉽게 문제를 해결했다. 메서드랑 친해지려는 노력을 계속 해야겠다.
+다른 사람들의 답변을 봤는데 혹시나가 역시나… splice라는 메서드를 통해서 상당히 쉽게 문제를 해결했다. 메서드랑 친해지려는 노력을 계속 해야겠다.    
 ```JavaScript
 function solution(num_list, n) {
     const res = [];
@@ -33,7 +33,6 @@ function solution(num_list, n) {
             arr = [];
         }
     }
-    
     return res;
 }
 ```
