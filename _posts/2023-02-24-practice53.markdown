@@ -1,0 +1,19 @@
+---
+layout: post
+title: 인덱스 바꾸기
+date: 2023-02-24 18:02:00 +0900
+categories: practice
+---
+### 인덱스 바꾸기    
+https://school.programmers.co.kr/learn/courses/30/lessons/120895    
+    
+#### 변수    
+
+    
+#### 제한사항    
+    
+    
+#### 순서    
+
+    
+#### 코드    
