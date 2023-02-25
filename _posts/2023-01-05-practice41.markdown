@@ -1,0 +1,44 @@
+---
+layout: post
+title: 문자열 계산하기
+date: 2023-01-05 23:35:00 +0900
+categories: practice
+---
+### 문자열 계산하기    
+https://school.programmers.co.kr/learn/courses/30/lessons/120902    
+    
+#### 변수    
+문자열로 된 수식 my_string    
+    
+#### 제한사항    
+연산자는 +, -만 존재    
+5 ≤ my_string의 길이 ≤ 100    
+    
+#### 순서    
+문자열이 공백으로 구분되어 있기 쉽게 분해할 수 있다. 배열로 분해한 뒤 반복문으로 답을 구하는 방식으로 접근했다.    
+1. my_string 배열로 분해    
+2. 변수 res 선언하고 my_string[0]을 할당, 배열에서 삭제    
+3. while 반복문 진입(my_string.length)    
+4. my_string[0]이 '+' 이면 res에 my_string[1]을 더함    
+5. my_string[0]이 '-' 이면 res에 my_string[1]을 더함    
+6. my_string[0], my_string[1]을 배열에서 삭제    
+7. res를 반환    
+    
+#### 코드    
+eval이 답안에 제일 많았는데, 보안상 문제로 사용하지 말것을 강력하게 권고하는 코드여서 체크해뒀다. eval은 나중에 꼭 왜 쓰지 말아야 하는지 간단하게라도 정리해야겠다. eval을 제외한 문제 풀이는 대체로 비슷했다.    
+```JavaScript
+function solution(my_string) {
+    my_string = my_string.split(' ');
+    let res = Number(my_string.shift());
+    while(my_string.length) {
+        if(my_string[0] === '+') {
+            res = res + Number(my_string[1])
+        } else {
+            res = res - Number(my_string[1])
+        }
+        my_string.shift();
+        my_string.shift();
+    }
+    return res;
+}
+```
