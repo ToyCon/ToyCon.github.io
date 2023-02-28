@@ -1,0 +1,32 @@
+---
+layout: post
+title: 대문자와 소문자
+date: 2023-02-28 15:04:00 +0900
+categories: practice
+---
+### 대문자와 소문자    
+https://school.programmers.co.kr/learn/courses/30/lessons/120893    
+    
+#### 변수    
+문자열 my_string    
+    
+#### 제한사항    
+1 ≤ my_string의 길이 ≤ 1,000    
+my_string은 영어 대문자와 소문자로만 구성    
+    
+#### 순서    
+알파벳 문자의 변환은 메서드를 써서 쉽게 할 수 있기 때문에, 방법을 고민했다. 정규표현식으로 소문자 여부를 확인하고, 맞으면 대문자로, 그렇지 않으면 소문자로 변환하는 방식으로 접근했다.        
+1. 변수 res 선언하고 my_string.split('') 할당    
+2. res에 반복문으로 match 메서드로 /[a-z]/와 일치하는지 확인    
+3. 맞으면 toUpperCase(), 그렇지 않으면 toLowerCase() 적용    
+4. res.join('')을 반환    
+    
+#### 코드    
+toLowerCase의 값과 문자가 일치하는지 여부를 확인하는 방식으로 변환 없이 푸는 풀이가 있었다. 실제로 활용이 가능한 방법인 만큼 기억하고 있어야겠다.    
+```JavaScript
+function solution(my_string) {
+    let res = my_string.split('');
+    res = res.map(e => e.match(/[a-z]/)?e.toUpperCase():e.toLowerCase());
+    return res.join('');
+}
+```
