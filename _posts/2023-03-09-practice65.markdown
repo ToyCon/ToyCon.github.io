@@ -1,0 +1,51 @@
+---
+layout: post
+title: 로그인 성공?
+date: 2023-03-09 22:34:00 +0900
+categories: practice
+---
+### 로그인 성공?    
+https://school.programmers.co.kr/learn/courses/30/lessons/120883    
+    
+#### 변수    
+아이디와 패스워드가 담긴 배열 id_pw    
+회원들의 정보가 담긴 2차원 배열 db    
+    
+#### 제한사항    
+회원들의 아이디는 문자열    
+회원들의 아이디는 알파벳 소문자와 숫자로만 이루어져 있음   
+회원들의 패스워드는 숫자로 구성된 문자열    
+회원들의 비밀번호는 같을 수 있지만 아이디는 같을 수 없음    
+id_pw의 길이는 2    
+id_pw와 db의 원소는 [아이디, 패스워드]    
+1 ≤ 아이디의 길이 ≤ 15    
+1 ≤ 비밀번호의 길이 ≤ 6    
+1 ≤ db의 길이 ≤ 10    
+db의 원소의 길이는 2    
+    
+#### 순서    
+아이디가 db에 포함되어 있는지 검색하고, 포함된 경우에만 비밀번호가 일치하는지 확인하면 된다. id와 pw의 일치 여부를 별도의 변수에 불리언 값으로 담은 다음 마지막에 조건문으로 답을 반환하는 방식을 생각했다.    
+1. 변수 corId, corPw 선언하고 false 할당    
+2. for (e of db) 반복문 진입    
+3. id_pw[0] === e[0] 확인, 일치하면 corId 에 true 할당    
+4. 3 조건문 내부에서 id_pw[1] === e[1] 확인, 일치하면 corPw에 true 할당, 3 하위에서 break로 반복문 종료    
+5. corId와 corPw가 모두 true인지 확인, 맞으면 login 반환    
+6. corId만 true, corPw는 false일 때 wrong pw 반환    
+7. 모두 false일 때 fail 반환    
+    
+#### 코드    
+다른 사람들의 답을 보니 Map 객체와 구조 분해 할당을 활용한 답들을 살펴볼수 있었다. 배열에서 구조분해 할당을 사용할 수 있는지 여부를 항상 기억해야겠다. Map 객체는 공부를 해봐야겠다. 
+```JavaScript
+function solution(id_pw, db) {
+    let corId = false;
+    let corPw = false;
+    for(e of db) {
+        if(id_pw[0] === e[0]) {
+            corId = true;
+            if(id_pw[1] === e[1]) corPw = true;
+            break;
+        }
+    }
+    return corId && corPw ? 'login' : (corId && !corPw ? 'wrong pw': 'fail');
+}
+```
