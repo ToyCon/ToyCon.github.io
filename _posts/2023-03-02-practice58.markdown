@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 369게임
+title: 가까운 수
 date: 2023-03-02 11:21:00 +0900
 categories: practice
 ---
-### 369게임    
-https://school.programmers.co.kr/learn/courses/30/lessons/120891    
+### 가까운 수    
+https://school.programmers.co.kr/learn/courses/30/lessons/120890    
     
 #### 변수    
 정수 배열 array    
