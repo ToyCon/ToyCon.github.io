@@ -1,0 +1,21 @@
+---
+layout: post
+title: 외계행성의 나이
+date: 2023-03-16 23:40:00 +0900
+categories: practice
+---
+### 외계행성의 나이    
+https://school.programmers.co.kr/learn/courses/30/lessons/120834    
+    
+#### 변수    
+나이 age    
+    
+#### 제한사항    
+age는 자연수    
+age ≤ 1,000    
+알파벳 소문자만 사용    
+
+#### 순서    
+작성중
+
+#### 코드    
