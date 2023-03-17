@@ -1,0 +1,23 @@
+---
+layout: post
+title: 중복된 숫자 개수
+date: 2023-03-17 23:03:00 +0900
+categories: practice
+---
+### 중복된 숫자 개수    
+https://school.programmers.co.kr/learn/courses/30/lessons/120583    
+    
+#### 변수    
+배열 array와 정수 n    
+    
+#### 제한사항    
+1 ≤ array의 길이 ≤ 100    
+0 ≤ array의 원소 ≤ 1,000    
+0 ≤ n ≤ 1,000    
+    
+#### 순서    
+작성중    
+    
+#### 코드    
+```JavaScript
+```
