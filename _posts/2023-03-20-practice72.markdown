@@ -1,0 +1,20 @@
+---
+layout: post
+title: 짝수는 싫어요
+date: 2023-03-20 23:46:00 +0900
+categories: practice
+---
+### 짝수는 싫어요    
+https://school.programmers.co.kr/learn/courses/30/lessons/120813    
+    
+#### 변수    
+정수 n    
+    
+#### 제한사항    
+1 ≤ n ≤ 100    
+    
+#### 순서    
+    
+#### 코드    
+```JavaScript
+```
