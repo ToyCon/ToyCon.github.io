@@ -4,7 +4,7 @@ title: 중복된 숫자 개수
 date: 2023-03-21 22:31:00 +0900
 categories: practice
 ---
-### 짝수는 싫어요    
+### 중복된 숫자 개수    
 https://school.programmers.co.kr/learn/courses/30/lessons/120583    
     
 #### 변수    
