@@ -8,8 +8,7 @@ categories: practice
 https://school.programmers.co.kr/learn/courses/30/lessons/120803    
     
 #### 변수    
--50,000 ≤ num1 ≤ 50,000    
--50,000 ≤ num2 ≤ 50,000    
+정수 num1, num2    
     
 #### 제한사항    
 -50,000 ≤ num1 ≤ 50,000    
