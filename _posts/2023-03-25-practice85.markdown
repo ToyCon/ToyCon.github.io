@@ -1,0 +1,21 @@
+---
+layout: post
+title: 최빈값 구하기
+date: 2023-03-25 21:21:00 +0900
+categories: practice
+---
+### 최빈값 구하기   
+https://school.programmers.co.kr/learn/courses/30/lessons/120812    
+    
+#### 변수    
+정수 배열 array    
+    
+#### 제한사항    
+0 < array의 길이 < 100    
+0 ≤ array의 원소 < 1000    
+    
+#### 순서    
+    
+#### 코드    
+```JavaScript
+```
