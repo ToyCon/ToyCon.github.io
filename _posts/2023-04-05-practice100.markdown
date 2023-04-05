@@ -24,7 +24,6 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120825
 4. my_string 반환    
     
 #### 코드    
-다른 사람들의 풀이 중에 Array 생성자를 써서 split 메서드를 대신 사용하는 풀이가 있었다. 앞으로 문자열을 분해할 때는 Array 생성자를 써야겠다.    
 ```JavaScript
 function solution(my_string, n) {
     return new Array(...my_string).map(e => e = e.repeat(n)).join('');
