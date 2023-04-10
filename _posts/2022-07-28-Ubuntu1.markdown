@@ -6,10 +6,10 @@ categories: Ubuntu
 ---
 우분투를 설치하고 난 뒤 해야 하는 일들 정리. 나는 CLI와 친해지기 위해 가능하면 CLI로 하려고 한다.    
 #### apt로 패키지 목록 업데이트    
-> sudo apt-get update
+> sudo apt-get update    
 > sudo apt-get upgrade    
     
-#### vscode 설치
+#### vscode 설치    
 포스트 업데이트 전에는 deb 파일 받아서 설치하라고 했는데, cli로 설치해보니 한글 입력 멀쩡히 잘 된다. 앞으로는 cli로 설치해야겠다.(출처: https://webnautes.tistory.com/1197)    
 ##### curl 설치(apt 업데이트 해도 자동 설치 안됨)    
 > sudo apt-get install curl    
@@ -18,11 +18,19 @@ categories: Ubuntu
 ##### 저장소 추가    
 > sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'    
 ##### 패키지 목록 업데이트 및 설치    
-> sudo apt update
-> sudo apt install code
-
-#### git 설치
-> sudo apt-get install git
-
+> sudo apt update    
+> sudo apt install code    
+    
+#### git 설치    
+> sudo apt-get install git    
+    
+#### nodejs, nvm 설치    
+##### nvm 설치    
+nvm 레포지토리 - https://github.com/nvm-sh/nvm    
+> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash    
+> source ~/.bashrc     
+위 코드 출처는 여기 : https://velog.io/@ywoosang/Node.js-%EC%84%A4%EC%B9%98    
+설치 후 재시작    
+    
 ### 한글 입력기 설치
 22.04 기준 기본으로 설치된 한글 입력기는 정상 작동한다. 문제가 있다면 기존에 작동이 검증된 한글 입력기를 검색해서 설치할 수 있다. 예전에 20.04 때부터 zoom에서 한글 입력이 정상적으로 안되서 틈날때마다 검색을 하는데 아직 해결책을 찾지 못했다. 이건 검색해서 해결책을 찾으면 업데이트 예정. 기본 한글 입력기가 마음에 들지 않을 경우 다른 한글 입력 도구를 설치하면 된다.
