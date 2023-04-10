@@ -1,18 +1,28 @@
 ---
 layout: post
-title: Ubuntu를 설치하고 나서 반드시 해야 할 것들
+title: Ubuntu를 설치하고 나서 할 일들
 date: 2022-07-28 15:00:00 +0900
 categories: Ubuntu
 ---
-구글에 검색을 해보면 'ubuntu를 설치하고 나서 해야 할 것들' 이런 내용으로 올라오는 문서나 youtube 영상이 많이 있다. 부트캠프를 통해서 linux와 친해졌다고 생각하지만 아직도 ubuntu가 거리를 좀 두는것 같아서 내가 필요한 것들 위주로 정리해둔다.
+우분투를 설치하고 난 뒤 해야 하는 일들 정리. 나는 CLI와 친해지기 위해 가능하면 CLI로 하려고 한다.    
+#### apt로 패키지 목록 업데이트    
+> sudo apt-get update
+> sudo apt-get upgrade    
+    
+#### vscode 설치
+포스트 업데이트 전에는 deb 파일 받아서 설치하라고 했는데, cli로 설치해보니 한글 입력 멀쩡히 잘 된다. 앞으로는 cli로 설치해야겠다.(출처: https://webnautes.tistory.com/1197)    
+##### curl 설치(apt 업데이트 해도 자동 설치 안됨)    
+> sudo apt-get install curl    
+##### GPG 키 복사    
+> sudo sh -c 'curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /etc/apt/trusted.gpg.d/microsoft.gpg'    
+##### 저장소 추가    
+> sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'    
+##### 패키지 목록 업데이트 및 설치    
+> sudo apt update
+> sudo apt install code
 
-### vscode 설치
-apt을 통해서 설치할 경우 한글 입력이 정상적으로 안되는 현상을 직접 겪었다. 검색을 해보니 같은 현상을 겪은 사람이 많고 해결책도 많이 올라와있다. 방법은 snap으로 자동설치하는 대신 귀찮아도 vscode 홈페이지에서 linux용 .deb 설치파일을 받아서 직접 설치하는 것.
-> https://code.visualstudio.com/    
-> .deb 설치파일 다운로드
-> 파일 위치에서 sudo apt install ./code_버전_amd64.deb
+#### git 설치
+> sudo apt-get install git
 
 ### 한글 입력기 설치
-22.04 기준 기본으로 설치된 한글 입력기는 정상 작동한다. 문제가 있다면 기존에 작동이 검증된 한글 입력기를 검색해서 설치할 수 있다. 예전에 20.04 때부터 zoom에서 한글 입력이 정상적으로 안되서 틈날때마다 검색을 하는데 아직 해결책을 찾지 못했다. 이건 검색해서 해결책을 찾으면 업데이트 예정. 기본 한글 입력기가 마음에 들지 않을 경우 다른 한글 입력 도구를 설치하면 된다. 
-
-
+22.04 기준 기본으로 설치된 한글 입력기는 정상 작동한다. 문제가 있다면 기존에 작동이 검증된 한글 입력기를 검색해서 설치할 수 있다. 예전에 20.04 때부터 zoom에서 한글 입력이 정상적으로 안되서 틈날때마다 검색을 하는데 아직 해결책을 찾지 못했다. 이건 검색해서 해결책을 찾으면 업데이트 예정. 기본 한글 입력기가 마음에 들지 않을 경우 다른 한글 입력 도구를 설치하면 된다.
