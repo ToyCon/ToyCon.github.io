@@ -1,7 +1,0 @@
----
-layout: post
-title: Vue.Js 2
-date: 2022-08-02 17:50:00 +0900
-categories: Vue.JS
----
-### 작성중

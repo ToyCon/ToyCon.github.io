@@ -1,7 +1,0 @@
----
-layout: post
-title: DOM을 통한 웹 페이지 조작
-date: 2022-08-11 21:50:00 +0900
-categories: HTTP
----
-### 작성중

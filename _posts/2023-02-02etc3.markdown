@@ -1,7 +1,0 @@
----
-layout: post
-title: 블로그 재작업 기록
-date: 2023-02-02 22:10:00 +0900
-categories: etc
----
-Jeykyll → Gatsby로 재작업중, react 기반이라 블로그 관리가 프론트엔드 연습
