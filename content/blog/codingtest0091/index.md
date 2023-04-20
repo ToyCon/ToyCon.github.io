@@ -1,7 +1,7 @@
 ---
 title: 캐릭터의 좌표
 date: "2023-04-19T19:55:07.284Z"
-description: "Hello World"
+description: "Coding Test"
 ---
 ### 캐릭터의 좌표    
 https://school.programmers.co.kr/learn/courses/30/lessons/120861    
@@ -29,7 +29,7 @@ keyinput은 항상 up, down, left, right만 주어짐
 6. e === 'left'일 때 res[0]--, Math.abs(res[0]) > limit[0] 이면 res[0]++    
 7. e === 'right'일 때 res[0]++, Math.abs(res[0]) > limit[0] 이면 res[0]--    
 8. res 반환    
-
+    
 #### 코드    
 switch를 사용한 구문이 깔끔하게 정리가 되어 있고 길이도 크게 길지 않았다. switch를 활용하는 경우를 찾아봐야겠다.    
 ```JavaScript
