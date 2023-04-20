@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "ToyCon's",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Learner",
+  "version": "1.0.0",
+  "author": "ToyCon <toystosound@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://toycon.github.io/"
   },
   "dependencies": {
     "@fontsource/merriweather": "^4.5.14",
@@ -26,6 +26,7 @@
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.7"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -44,6 +45,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build && gh-pages -d public"
   }
 }
