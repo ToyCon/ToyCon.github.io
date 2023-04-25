@@ -11,7 +11,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120845
 주사위 모서리의 길이 정수 n    
     
 #### 제한사항    
-box의 길이는 3
+box의 길이는 3    
 box[0] = 상자의 가로 길이    
 box[1] = 상자의 세로 길이    
 box[2] = 상자의 높이 길이    
