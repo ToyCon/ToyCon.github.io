@@ -1,7 +1,7 @@
 ---
 title: 캐릭터의 좌표
 date: "2023-04-19T19:55:07.284Z"
-description: "Coding Test"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120861"
 ---
 ### 캐릭터의 좌표    
 https://school.programmers.co.kr/learn/courses/30/lessons/120861    

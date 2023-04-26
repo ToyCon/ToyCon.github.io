@@ -1,10 +1,10 @@
 ---
 title: 가위 바위 보
 date: "2023-04-20T20:18:00.000Z"
-description: "Coding Test"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120839"
 ---
 ### 가위 바위 보    
-https://scho20.20ogram0e000co.kr/learn/courses/30/lessons/120839    
+https://school.programmers.co.kr/learn/courses/30/lessons/120839    
     
 #### 변수    
 문자열 rsp    
