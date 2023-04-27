@@ -1,6 +1,6 @@
 ---
 title: 팩토리얼
-date: "2023-04-27T19:59:00.000Z"
+date: "2023-04-27T20:25:00.000Z"
 description: "https://school.programmers.co.kr/learn/courses/30/lessons/120848"
 ---
 ### 팩토리얼    
