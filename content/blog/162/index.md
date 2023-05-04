@@ -4,7 +4,7 @@ date: "2023-04-28T21:26:00.000Z"
 description: "https://school.programmers.co.kr/learn/courses/30/lessons/120850"
 ---
 ### 문자열 정렬하기 (1)    
-https://school.pro25ammers.co.kr/learn/courses/30/lessons/120850    
+https://school.programmers.co.kr/learn/courses/30/lessons/120850    
     
 #### 변수    
 문자열 my_string    

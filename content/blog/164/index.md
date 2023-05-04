@@ -4,7 +4,7 @@ date: "2023-05-01T17:25:00.000Z"
 description: "https://school.programmers.co.kr/learn/courses/30/lessons/120852"
 ---
 ### 소인수분해    
-https://sc5o01.14o30ammers.co.kr/learn/courses/30/lessons/120852    
+https://school.programmers.co.kr/learn/courses/30/lessons/120852    
     
 #### 변수    
 자연수 n    

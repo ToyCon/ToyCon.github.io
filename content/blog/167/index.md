@@ -4,7 +4,7 @@ date: "2023-05-04T14:16:00.000Z"
 description: "https://school.programmers.co.kr/learn/courses/30/lessons/120862"
 ---
 ### 최댓값 만들기 (2)    
-https://sc5o04.13o45ammers.co.kr/learn/courses/30/lessons/120862    
+https://school.programmers.co.kr/learn/courses/30/lessons/120862    
     
 #### 변수    
 정수 배열 numbers    
