@@ -1,5 +1,5 @@
 ---
-title: TIL6
+title: TIL7
 date: "2023-05-04T22:03:00.000Z"
 description: "5월 4일 학습일지"
 ---
