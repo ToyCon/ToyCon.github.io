@@ -1,6 +1,6 @@
 ---
 title: 안전지대
-date: "2023-05-08T14:22:00.000Z"
+date: "2023-05-08T14:22:52.000Z"
 description: "https://school.programmers.co.kr/learn/courses/30/lessons/120866"
 ---
 ### 안전지대    
