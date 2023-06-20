@@ -1,0 +1,55 @@
+---
+layout: post
+title: 명예의 전당
+date: 2022-11-28 13:55:00 +0900
+categories: practice
+---
+### 명예의 전당    
+https://school.programmers.co.kr/learn/courses/30/lessons/138477    
+    
+#### 변수    
+명예의 전당 목록의 점수의 개수 k    
+1일부터 마지막 날까지 출연한 가수들의 점수 score    
+    
+#### 순서    
+명예의 전당 목록에서 제일 낮은 점수를 배열로 저장하여 반환해야 한다. 명예의 전당을 저장할 별도의 변수를 선언한 뒤 새로운 가수의 점수를 비교하고, honor 배열의 제일 낮은 점수를 최종 답안에 추가하는 방식으로 접근했다.    
+    
+1. 명예의 전당 배열을 담을 상수 honor를 선언하고 빈 배열 할당    
+2. 결과를 담을 상수 result를 선언하고 빈 배열 할당    
+3. score의 배열 길이가 0보다 클 경우만 작동하는 while 반복문 진입    
+4. 변수 day를 선언하고 score.shift()를 할당    
+5. honor.length < k 인 경우 honor에 추가(push)하고 오름차순 정렬     
+6. else 구문으로 (honor.length >= k인 경우) 조건문으로 day가 최저점수인 honor[0]보다 큰지 비교(같거나 작으면 honor를 바꿀 필요가 없음)    
+6. honor 배열의 첫 번째 요소를 제거    
+7. honor 배열에 day를 추가    
+8. honor 배열을 오름차순으로 정렬    
+9. 조건문을 나와서 result에 honor[0]을 추가    
+10. while 구문 밖에서 result를 반환    
+    
+#### 코드    
+완전히 중복되는 코드를 보고 겹치는 부분을 합쳐보려고 했는데 잘 안됐다. 고민해봐야겠다.    
+```JavaScript
+function solution(k, score) {
+    const honor = [];
+    const result = [];
+
+    while(score.length > 0) {
+        let day = score.shift();
+        
+        if(honor.length < k) {
+            honor.push(day);
+            honor.sort((a, b) => a - b);
+        } else {
+            if(day > honor[0]) {
+                honor.shift();
+                honor.push(day);
+                honor.sort((a, b) => a - b);
+            }
+        }
+        
+        result.push(honor[0]);
+    }
+    
+    return result;
+}
+```

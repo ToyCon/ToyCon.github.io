@@ -1,30 +1,29 @@
 ---
-title: 순서쌍의 개수
-date: "2023-04-07T16:12:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120836"
+title: 배열의 평균값
+date: "2023-04-01T22:03:00.000Z"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120817"
 ---
-### 순서쌍의 개수    
-https://school.programmers.co.kr/learn/courses/30/lessons/120836    
+### 배열의 평균값    
+https://school.programmers.co.kr/learn/courses/30/lessons/120817    
     
 #### 변수    
-자연수 n    
+정수 배열 numbers    
     
 #### 제한사항    
-1 ≤ n ≤ 1,000,000    
+0 ≤ numbers의 원소 ≤ 1,000    
+1 ≤ numbers의 길이 ≤ 100    
+정답의 소수 부분이 .0 또는 .5인 경우만 주어짐    
     
 #### 풀이    
-순서쌍의 갯수를 물어보는 문제이므로 반복문을 통해 순서쌍이 성립되는 경우만 별도의 변수에 합산했다.    
-1. 변수 res 선언하고 0 할당    
-2. for(i = 1; i <= n / 2; i++) 반복문 진입    
-3. n % i === 0 확인, 맞으면 res++    
-4. res + 1을 반환    
+reduce 메서드로 바로 답을 반환했다.    
+1. numbers.reduce() 실행    
+2. 콜백 함수로 (acc, cur, idx, { length }) => idx === length - 1 ? (acc + cur) / length : acc + cur 실행    
+3. 최초값으로 0 할당    
+4. 1을 반환    
     
 #### 코드    
-제곱근을 이용한 방식이 아직도 헷갈린다. 제곱근 방식을 사용한 다른 사람들의 풀이를 연구해봐야겠다.    
 ```JavaScript
-function solution(n) {
-    let res = 0;    
-    for(i = 1; i <= n / 2; i++) if(n % i === 0) res++;
-    return res + 1;
+function solution(numbers) {
+    return numbers.reduce((acc, cur, idx, { length }) => idx === length - 1 ? (acc + cur) / length : acc + cur, 0);
 }
 ```

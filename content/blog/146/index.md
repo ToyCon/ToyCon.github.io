@@ -1,27 +1,25 @@
 ---
-title: 배열 자르기
-date: "2023-04-17T10:40:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120833"
+title: 나이 출력
+date: "2023-04-05T20:23:00.000Z"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120820"
 ---
-### 배열 자르기    
-https://school.programmers.co.kr/learn/courses/30/lessons/120833    
+### 나이 출력    
+https://school.programmers.co.kr/learn/courses/30/lessons/120820    
     
 #### 변수    
-정수 배열 numbers    
-정수 num1, num2    
+나이 age    
     
 #### 제한사항    
-2 ≤ numbers의 길이 ≤ 30    
-0 ≤ numbers의 원소 ≤ 1,000    
-0 ≤num1 < num2 < numbers의 길이    
+0 < age ≤ 120    
+나이는 태어난 연도에 1살이며 1년마다 1씩 증가    
     
 #### 풀이    
-메서드를 사용해서 바로 배열을 반환했다.    
-1. numbers.slice(num1, num2 + 1) 반환    
+간단한 사칙연산이라 바로 답을 반환했다.    
+1. 2022 - age + 1 반환    
     
 #### 코드    
 ```JavaScript
-function solution(numbers, num1, num2) {
-    return numbers.slice(num1, num2 + 1);
+function solution(age) {
+    return 2022 - age + 1;
 }
 ```

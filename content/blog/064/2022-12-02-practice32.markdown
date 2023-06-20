@@ -1,0 +1,29 @@
+---
+layout: post
+title: 자릿수 더하기
+date: 2022-12-02 15:10:00 +0900
+categories: practice
+---
+### 자릿수 더하기    
+https://school.programmers.co.kr/learn/courses/30/lessons/120906    
+    
+#### 변수    
+정수 n    
+    
+#### 제한사항    
+0 ≤ n ≤ 1,000,000    
+    
+#### 순서    
+배열로 풀어내서 메서드를 적용할 경우 복잡하지 않게 풀이가 가능하다고 판단했다. 메서드를 써서 접근했다.    
+1. n을 문자열로 변환    
+2. split 메서드로 배열로 분해    
+3. map 메서드로 정수로 변환    
+4. reduce함수로 합쳐서 반환    
+    
+#### 코드    
+다른 풀이를 보니 map 과정을 생략하고 reduce 함수에서 바로 number로 형변환을 해서 적용했다. 초기값 0을 줘서 cur에만 number를 적용해도 문제가 없었다. reduce 함수 사용법을 더 살펴봐야겠다.    
+```JavaScript
+function solution(n) {
+    return String(n).split('').map(e => Number(e)).reduce((acc, cur) => acc + cur);
+}
+```

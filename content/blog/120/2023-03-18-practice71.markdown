@@ -1,0 +1,30 @@
+---
+layout: post
+title: 각도기
+date: 2023-03-18 23:36:00 +0900
+categories: practice
+---
+### 각도기    
+https://school.programmers.co.kr/learn/courses/30/lessons/120829    
+    
+#### 변수    
+각 angle    
+    
+#### 제한사항    
+0 < angle ≤ 180    
+angle은 정수    
+    
+#### 순서    
+switch 구문을 적용할 수 있을까 싶어서 적용해 봤는데, case를 엄격하게 따지는 방식이어서 사용하지 못한다는 사실을 알게 됐다. 삼항연산자를 사용해 최대한 간결하게 작성했다.    
+1. angle이 180인지 확인, 맞으면 4를 반환    
+2. 90보다 크면 3을 반환    
+3. 90이면 2를 반환    
+4. 모두 해당하지 않으면 1을 반환    
+    
+#### 코드    
+배열의 길이를 통해 답을 반환하는 방식의 답변이 있었다. 간결하고 응용하기 좋은 코드인듯 하다.    
+```JavaScript
+function solution(angle) {
+    return angle === 180 ? 4 : angle > 90 ? 3 : angle === 90 ? 2 : 1;
+}
+```

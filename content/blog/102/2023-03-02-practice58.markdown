@@ -1,0 +1,39 @@
+---
+layout: post
+title: 가까운 수
+date: 2023-03-02 11:21:00 +0900
+categories: practice
+---
+### 가까운 수    
+https://school.programmers.co.kr/learn/courses/30/lessons/120890    
+    
+#### 변수    
+정수 배열 array    
+정수 n    
+    
+#### 제한사항    
+1 ≤ array의 길이 ≤ 100    
+1 ≤ array의 원소 ≤ 100    
+1 ≤ n ≤ 100    
+가장 가까운 수가 여러 개일 경우 더 작은 수를 return    
+    
+#### 순서    
+n에 가까운 수를 절대값을 통해 구하는 방식으로 접근했다.    
+1. sort 메서드로 array 정렬    
+2. 정렬 콜백 함수로 (a, b) => Math.abs(a - n) - Math.abs(b - n)를 호출    
+3. 첫번째 요소를 반환    
+    
+#### 코드    
+테스트 케이스 하나를 통과하지 못해서 위 과정을 반복문으로 진행해서 별도의 값을 받아 반환했다. 다른 사람의 풀이를 보니 콜백 함수에 a-b를 조건으로 추가했는데 내가 같은 시도를 했음에도 통과하지 못했던 방법이어서 조금 의아하다. 콜백 함수를 수정하는 도중에 실수를 한 것 같은데 이런 경우에 침착하게 처음부터 다시 작성을 하는 방식으로 문제를 풀어봐야겠다. 한번 혼란이 오니 시간을 많이 쓰게 된다.    
+```JavaScript
+function solution(array, n) {
+    let res = array[0];
+    for(i = 1; i < array.length; i++) {
+        let num1 = Math.abs(res - n);
+        let num2 = Math.abs(array[i] - n);
+        if(num1 > num2) res = array[i];
+        if(num1 === num2 && res > array[i]) res = array[i];
+    }
+    return res;
+}
+```

@@ -1,34 +1,33 @@
 ---
-title: 팩토리얼
-date: "2023-04-27T20:25:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120848"
+title: 공 던지기
+date: "2023-04-21T17:15:00.000Z"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120843"
 ---
-### 팩토리얼    
-https://school.programmers.co.kr/learn/courses/30/lessons/120848    
+### 공 던지기    
+https://school.programmers.co.kr/learn/courses/30/lessons/120843    
     
 #### 변수    
-정수 n    
+정수 배열 numbers    
+정수 K    
     
 #### 제한사항    
-i! ≤ n    
-0 < n ≤ 3,628,800    
+공은 1번부터 던지며 오른쪽으로 한 명을 건너뛰고 그다음 사람에게만 던질 수 있음    
+2 < numbers의 길이 < 100    
+0 < k < 1,000    
+numbers의 첫 번째와 마지막 번호는 실제로 바로 옆에 있음    
+numbers는 1부터 시작하며 번호는 순서대로 올라감    
     
 #### 풀이    
-1. 변수 res, fac 선언하고 1 할당    
-2. while(fac <= n) 반복문 진입    
-3. fac *= res; res++ 실행    
-4. res - 2 반환    
+수열이라고 생각하고 10번째 값까지 적어보니 2n-1번째 값을 찾는 수열 문제임을 확인했다. 추가로 배열의 인덱스는 0부터 시작하기 때문에, 구하는 값은 2n - 2에 해당하는 numbers의 원소다. numbers의 길이보다 길 경우 길이로 나눈 나머지를 인덱스에 넣는 방식으로 값을 찾았다.    
+1. 삼항연산자 조건으로 k * 2 - 2 > numbsers.length 확인    
+2. 만족하면 numbers[(k * 2 - 2) % numbers.length]    
+3. 그 외의 경우 numbers[k * 2 - 2]    
+4. 3을 반환    
     
 #### 코드    
-res가 계속 크게 나와서 2를 뺀 값을 return했더니 모든 테스트를 통과해서 당황했다. 내 풀이처럼 두 변수를 놓고 계산 결과를 반영하면서 반복문으로 해결한 다른 풀이를 보니 마찬가지로 -1을 한 풀이가 있었는데 접근 자체는 옳은 방향이었던것 같다. 이해를 위해 검색을 해봐야겠다.    
+다른 풀이를 살펴보니 2n - 2의 값을 numbers의 길이와 굳이 비교할 필요가 없었다. -- 연산자를 사용한 풀이도 있었는데 변수 앞에 먼저 --를 실행해서 k가 1일 때 바로 0으로 만드는 풀이도 있었다. (n - 1) * 2로 푸는 방법인데 이 쪽이 계산을 더 간단하게 만들어준다. 답이 정상적으로 구해지더라도 계산을 더 간소하게 할 수 있는지 꼭 제출 전에 살펴봐야겠다.    
 ```JavaScript
-function solution(n) {
-    let res = 1;
-    let fac = 1;
-    while (fac <= n) {
-        fac *= res;
-        res++;     
-    }
-    return res - 2;
+function solution(numbers, k) {
+    return k * 2 - 2 > numbers.length ? numbers[(k * 2 - 2) % numbers.length] : numbers[k * 2 - 2];
 }
 ```

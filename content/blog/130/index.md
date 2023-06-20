@@ -1,29 +1,33 @@
 ---
-title: 숨어있는 숫자의 덧셈 (1)
-date: "2023-03-30T15:10:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120851"
+title: 분수의 덧셈
+date: 2023-03-22 22:56:00 +0900
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120808"
 ---
-### 숨어있는 숫자의 덧셈 (1)    
-https://school.programmers.co.kr/learn/courses/30/lessons/120851    
+### 분수의 덧셈    
+https://school.programmers.co.kr/learn/courses/30/lessons/120808    
     
 #### 변수    
-문자열 my_string    
+첫 번째 분수의 분자와 분모를 뜻하는 numer1, denom1    
+두 번째 분수의 분자와 분모를 뜻하는 numer2, denom2    
     
 #### 제한사항    
-1 ≤ my_string의 길이 ≤ 1,000    
-my_string은 소문자, 대문자 그리고 한자리 자연수로 구성    
+0 <numer1, denom1, numer2, denom2 < 1,000    
     
-#### 풀이    
-배열로 분해하여 숫자만 골라내는 과정을 적용했다.    
-1. split('') 메서드 써서 배열로 분해    
-2. 배열의 각 원소를 강제로 number 타입으로 변환했을 때 NaN 여부를 확인    
-3. 숫자로 변환    
-4. 모든 원소의 합을 반환    
+#### 순서    
+수의 범위가 크지 않으므로 따로 분모를 일치시키는 과정을 거치지 않고 바로 첫 번째 분수에 denom2를 곱하고, 마찬가지로 두 번째 분수에도 denom1을 곱하는 방식으로 풀었다.    
+1. getGCD = (a, b) => (b > 0 ? getGCD(b, a % b) : a); 함수 선언    
+2. 변수 numer3 선언하고 numer1 * denom2 + numer2 * denom1 할당    
+3. denom3 선언하고 denom1 * denom2 할당    
+4. 변수 GCD 선언하고 getGCD(numer3, denom3) 할당    
+5. [numer3 / GCD, denom3/GCD] 반환    
     
 #### 코드    
-reduce 메서드의 콜백에서 자꾸 이상한 결과가 나와서 결국 map 메서드를 써서 number 타입으로 전체 형변환을 해버렸다. 다른 사람들의 풀이를 보니 reduce의 콜백에서 acc와 cur을 모두 강제로 paresInt 함수로 number 타입으로 강제로 바꿔서 연산을 했는데, 아마 이 부분을 내가 놓친 것 같다.    
 ```JavaScript
-function solution(my_string) {
-    return my_string.split('').filter(e => !isNaN(Number(e))).map(e => e = Number(e)).reduce((acc, cur) => acc + cur, 0);
+function solution(numer1, denom1, numer2, denom2) {
+    const getGCD = (a, b) => (b > 0 ? getGCD(b, a % b) : a);
+    let numer3 = numer1 * denom2 + numer2 * denom1;
+    let denom3 = denom1 * denom2;
+    let GCD = getGCD(numer3, denom3);
+    return [numer3 / GCD, denom3/GCD];
 }
 ```

@@ -1,25 +1,17 @@
 ---
-title: 모음 제거
-date: "2023-04-28T21:16:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120849"
+title: TIL1
+date: "2023-04-24T22:02:00.000Z"
+description: "4월 24일 학습일지"
 ---
-### 모음 제거    
-https://school.programmers.co.kr/learn/courses/30/lessons/120849    
+그동안 코딩 테스트 문제도 풀고 블로그를 꾸준히 작성은 해 왔는데, 제대로 활용하지 못하는 것 같아서 블로그를 더 잘 활용할 방법을 떠올리던 중에 마침 TIL 포스트가 떠올라서 오늘부터 바로 작성하려고 한다.    
     
-#### 변수    
-문자열 my_string    
+### 오늘 한 일들    
+1. 코딩 테스트 1문제 풀기    
+2. '코드 없는 알고리즘과 데이터 구조' 독서(1장, 13:20 ~ 14:00)    
+3. 코딩애플 NextJs 강의 수강 및 실습(1, 2 강)    
     
-#### 제한사항    
-my_string은 소문자와 공백으로 이루어져 있음    
-1 ≤ my_string의 길이 ≤ 1,000    
-    
-#### 풀이    
-1. my_string.replaceAll(/a|e|i|o|u/g,'') 실행 후 반환    
-    
-#### 코드    
-| 연산자 대신 []로 묶는 정규식이 더 깔끔했다. 정규식에 더 익숙해져야겠다.    
-```JavaScript
-function solution(my_string) {
-    return my_string.replaceAll(/a|e|i|o|u/g,'');
-}
-```
+### 내일 할 일들    
+1. 코딩 테스트 문제 2문제 이상 풀기    
+2. '코드 없는 알고리즘과 데이터 구조' 40분 이상 읽기    
+3. NestJS 강의 수강 및 실습    
+4. 예전 블로그 포스트 Gatsby 형식으로 복구    

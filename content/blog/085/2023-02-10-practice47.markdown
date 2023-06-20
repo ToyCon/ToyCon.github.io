@@ -1,0 +1,37 @@
+---
+layout: post
+title: 연속된 수의 합
+date: 2023-02-10 23:50:00 +0900
+categories: practice
+---
+### 연속된 수의 합    
+https://school.programmers.co.kr/learn/courses/30/lessons/120923    
+    
+#### 변수    
+정수 num, total    
+    
+#### 순서    
+total을 num으로 나눴을 때 몫이 중앙값이거나 근처에 있었다. 몫을 변수로 받은 다음 앞, 뒤의 값을 반환할 배열에 추가하는 식으로 접근했다.    
+1. 상수 res 선언하고 빈 배열 할당    
+2. 변수 mid를 선언하고 totla / num 의 정수 값만 할당    
+3. mid를 res에 추가    
+4. for(i = 1; i < num/2; i++) 반복문 진입    
+5. mid - i를 res 앞에 추가, mid + i를 res 뒷쪽에 추가    
+6. num % 2 === 0을 확인, 맞으면 res의 마지막 요소를 제거    
+7. res를 반환    
+    
+#### 코드    
+반복문의 조건에서 짝수의 경우 등호가 붙지 않으면 정상적으로 작동하지 않았다. 등호를 추가한 조건으로 테스트를 통과했다. 그리고 역시 다른 형태로 접근한 풀이들이 있었는데 보면서 연구해봐야겠다.    
+```JavaScript
+function solution(num, total) {
+    const res = [];
+    let mid = Math.floor(total / num);
+    res.push(mid);
+    for(i = 1; i <= num / 2; i++) {
+        res.unshift(mid - i);
+        res.push(mid + i);
+    }
+    if(num % 2 === 0) res.shift();
+    return res;
+}
+```

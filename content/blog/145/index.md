@@ -1,30 +1,31 @@
 ---
-title: 짝수의 합
-date: "2023-04-12T09:35:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120831"
+title: 짝수 홀수 개수
+date: "2023-04-04T17:15:00.000Z"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120824"
 ---
-### 짝수의 합    
-https://school.programmers.co.kr/learn/courses/30/lessons/120831    
+### 짝수 홀수 개수    
+https://school.programmers.co.kr/learn/courses/30/lessons/120824    
     
 #### 변수    
-정수 n    
+정수 배열 num_list    
     
 #### 제한사항    
-0 < n ≤ 1000    
+1 ≤ num_list의 길이 ≤ 100    
+0 ≤ num_list의 원소 ≤ 1,000    
     
 #### 풀이    
-조건을 만족하는 수의 합은 보통 공식이 있어서 이 문제도 공식이 있지 않을까 했는데, 혼자서 찾는 것은 쉽지 않았다. 공식은 나중에 찾아보기로 하고 반복문으로 합을 구했다.    
-1. 변수 res 선언하고 0 할당    
-2. for(i = 2; i <= n; i += 2) 반복문 진입    
-3. res += i 실행    
+다른 문제의 풀이를 보면서 reduce 메서드를 통해 하나의 배열로 묶어서 반환하는 방식을 봤는데 직접 시도해보니 잘 되지 않았다. 별도의 배열을 선언해서 풀었다.    
+1. 상수 res 선언하고 [0, 0] 할당    
+2. num_list에 forEach 적용, 콜백 함수로 각 원소에 대해서 짝수, 홀수 여부를 확인    
+3. 짝수면 res[0] + 1, 홀수면 res[1] + 1    
 4. res 반환    
     
 #### 코드    
-다른 사람들의 풀이를 보니 역시 공식이 있었다. 원리를 찾아봐야겠다.    
+접근방법이 굉장히 다양했다. 짝수 홀수 검사를 하지 않고 2로 나눈 나머지를 바로 반환할 배열의 순서로 활용한 답이 많은 추천을 받았는데 나중에 사용할 수 있는 방법인 것 같다. 기억해야겠다.    
 ```JavaScript
-function solution(n) {
-    let res = 0;
-    for(i = 2; i <= n; i += 2) res += i;
+function solution(num_list) {
+    let res = [0, 0];
+    num_list.forEach(e => e % 2 === 0 ? res[0] += 1 : res[1] += 1);
     return res;
 }
 ```

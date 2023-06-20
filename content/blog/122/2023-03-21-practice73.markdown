@@ -1,0 +1,29 @@
+---
+layout: post
+title: 중복된 숫자 개수
+date: 2023-03-21 22:31:00 +0900
+categories: practice
+---
+### 중복된 숫자 개수    
+https://school.programmers.co.kr/learn/courses/30/lessons/120583    
+    
+#### 변수    
+정수가 담긴 배열 array    
+정수 n    
+    
+#### 제한사항    
+1 ≤ array의 길이 ≤ 100    
+0 ≤ array의 원소 ≤ 1,000    
+0 ≤ n ≤ 1,000    
+    
+#### 순서    
+메서드를 사용해 범위를 좁히는 방식으로 풀었다.    
+1. array에 filter 적용, n과 같은지 확인    
+2. array의 길이를 반환    
+    
+#### 코드    
+```JavaScript
+function solution(array, n) {
+    return array.filter(e => e === n).length;
+}
+```

@@ -1,28 +1,29 @@
 ---
-title: 특정 문자 제거하기
-date: "2023-04-05T23:06:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120826"
+title: 옷가게 할인 받기
+date: "2023-03-31T17:15:00.000Z"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120818"
 ---
-### 특정 문자 제거하기    
-https://school.programmers.co.kr/learn/courses/30/lessons/120826    
+### 옷가게 할인 받기    
+https://school.programmers.co.kr/learn/courses/30/lessons/120818    
     
 #### 변수    
-문자열 my_string    
-문자 letter    
+구매한 옷의 가격 price    
     
 #### 제한사항    
-1 ≤ my_string의 길이 ≤ 100    
-letter은 길이 1인 영문자    
-my_string과 letter은 알파벳 대소문자 구성    
-대문자와 소문자를 구분    
+10 ≤ price ≤ 1,000,000    
+price는 10원 단위(1의 자리가 0)    
+소수점 이하를 버린 정수를 반환    
     
 #### 풀이    
-replaceAll 메서드로 letter에 해당하는 모든 문자를 모두 바로 변환했다.    
-1. my_string.replaceAll(letter, '')를 반환    
+조건문을 통해서 price의 할인 조건을 확인 후 할인된 가격을 반환하는 방식으로 풀었다.    
+1. price >= 500000 확인, 맞으면 price * 8 / 10에서 소수점 이하를 버린 값을 반환     
+2. price >= 300000 확인, 맞으면 price * 9 / 10에서 소수점 이하를 버린 값을 반환     
+3. price >= 100000 확인, 맞으면 price * 95 / 100에서 소수점 이하를 버린 값을 반환     
+4. 조건을 모두 만족하지 않으면 price를 반환    
     
 #### 코드    
 ```JavaScript
-function solution(my_string, letter) {
-    return my_string.replaceAll(letter, '');
+function solution(price) {
+    return Math.trunc(price >= 500000 ? price * 8 / 10 : price >= 300000 ? price * 9 / 10 : price >= 100000 ? price * 95 / 100 : price);
 }
 ```

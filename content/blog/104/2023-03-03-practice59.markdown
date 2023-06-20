@@ -1,0 +1,30 @@
+---
+layout: post
+title: 삼각형의 완성조건 (1)
+date: 2023-03-03 20:14:00 +0900
+categories: practice
+---
+### 삼각형의 완성조건 (1)    
+https://school.programmers.co.kr/learn/courses/30/lessons/120889    
+    
+#### 변수    
+배열 sides    
+    
+#### 제한사항    
+sides의 원소는 자연수    
+sides의 길이는 3    
+1 ≤ sides의 원소 ≤ 1,000    
+    
+#### 순서    
+처음부터 배열로 주어지므로 정렬을 통해 합을 비교하는 방식으로 풀었다.    
+1. sort 메서드로 sides 오름차순 정렬    
+2. sides[2] < sides[0] + sides[1] 여부를 확인    
+3. 맞으면 1, 틀리면 2 반환    
+    
+#### 코드    
+```JavaScript
+function solution(sides) {
+    sides.sort((a, b) => a - b);
+    return sides[2] < sides[0] + sides[1]? 1 : 2;
+}
+```

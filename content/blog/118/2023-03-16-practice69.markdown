@@ -1,0 +1,35 @@
+---
+layout: post
+title: 외계행성의 나이
+date: 2023-03-16 23:40:00 +0900
+categories: practice
+---
+### 외계행성의 나이    
+https://school.programmers.co.kr/learn/courses/30/lessons/120834    
+    
+#### 변수    
+나이 age    
+    
+#### 제한사항    
+age는 자연수    
+age ≤ 1,000    
+알파벳 소문자만 사용    
+
+#### 순서    
+숫자를 문자열로 치환한 다음 바로 소문자로 치환하는 방식을 생각했는데, 별도의 변수 선언 없이 숫자를 알파벳으로 바로 바꾸는 방법은 떠올릴 수 없었다. 알파벳 소문자를 별도의 배열에 담은 뒤 age에 반복문을 통해 모든 문자를 치환하는 방식으로 풀었다.    
+1. 변수 res 선언하고 빈 문자열과 age를 더한 값을 할당    
+2. 상수 spell 선언하고 [a, b, c, d, e, f, g, h, i, j] 할당    
+3. for (i < 10) 반복문 진입    
+4. res에 replaceAll 메서드 적용, string(i)를 spell[i]로 변환한 값을 재할당    
+5. res 반환    
+    
+#### 코드    
+숫자 ↔ 문자 변환 형태의 문제는 패턴이 정해져 있는데도 매번 애를 먹는 듯 하다. 다른 사람들 풀이를 보고 연구를 해봐야겠다. 쓸 일이 많을 것 같다.    
+```JavaScript
+function solution(age) {
+    let res = '' + age;
+    const spell = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+    for (i = 0; i < 10; i++) res = res.replaceAll(String(i), spell[i]);
+    return res;
+}
+```

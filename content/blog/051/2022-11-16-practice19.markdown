@@ -1,0 +1,28 @@
+---
+layout: post
+title: 문자열 정렬하기 (2)
+date: 2022-11-16 16:00:00 +0900
+categories: etc
+---
+### 문자열 정렬하기 (2)    
+https://school.programmers.co.kr/learn/courses/30/lessons/120911    
+    
+#### 변수    
+문자열 my_string    
+    
+#### 제한사항    
+0 < my_string 길이 < 100    
+    
+#### 순서    
+문자열 자체로는 정렬이 안되기 때문에 결국 배열로 분해해서 접근해야 했다. 메서드를 이용해서 별도의 변수 선언 없이 바로 반환하는 방식으로 풀었다.    
+1. toLowerCase() 실행    
+2. split('') 실행    
+3. sort() 실행    
+4. join('') 실행 후 반환    
+    
+#### 코드    
+```JavaScript
+function solution(my_string) {
+    return my_string.toLowerCase().split('').sort().join('');
+}
+```

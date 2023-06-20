@@ -1,33 +1,29 @@
 ---
-title: 개미 군단
-date: "2023-04-01T21:40:00.000Z"
-description: "https://school.programmers.co.kr/learn/courses/30/lessons/120837"
+title: 중앙값 구하기
+date: "2023-03-24T10:23:00.000Z"
+description: "https://school.programmers.co.kr/learn/courses/30/lessons/120853"
 ---
-### 개미 군단    
-https://school.programmers.co.kr/learn/courses/30/lessons/120837    
+### 중앙값 구하기   
+https://school.programmers.co.kr/learn/courses/30/lessons/120853    
     
 #### 변수    
-사냥감의 체력 hp    
+정수 배열 array    
     
 #### 제한사항    
-hp는 자연수    
-0 ≤ hp ≤ 1000    
+array의 길이는 홀수    
+0 < array의 길이 < 100    
+-1,000 < array의 원소 < 1,000    
     
 #### 풀이    
-복잡한 계산이 필요하지 않아서 답을 담을 변수를 선언하고 사칙 연산으로 풀었다.    
-1. 변수 res 선언하고 Math.trunc(hp / 5) 할당    
-2. hp = hp % 5 할당    
-3. res = res + hp Math.trunc(hp / 3) 할당    
-4. hp = hp % 3 할당    
-5. res + hp를 반환    
+배열을 정렬해서 가운데 원소를 바로 반환하는 방식으로 풀었다.        
+1. array.sort() 실행    
+2. array[Math.trunc(array.length / 2)] 반환    
     
 #### 코드    
+sort 메서드가 오름차순 정렬을 기본으로 하기에 콜백을 따로 주지 않았는데 테스트케이스를 통과하지 못했다. 어떻게 정렬되는지 다시 확인을 해봐야겠다.    
 ```JavaScript
-function solution(hp) {
-    let res = Math.trunc(hp / 5);
-    hp %= 5;
-    res += Math.trunc(hp / 3);
-    hp %= 3;
-    return res + hp;
+function solution(array) {
+    array = array.sort((a, b) => a - b);
+    return array[Math.trunc(array.length / 2)];
 }
 ```

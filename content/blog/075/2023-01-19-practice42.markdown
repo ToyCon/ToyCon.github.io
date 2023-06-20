@@ -1,0 +1,23 @@
+---
+layout: post
+title: 편지
+date: 2023-01-19 23:53:00 +0900
+categories: practice
+---
+### 편지    
+https://school.programmers.co.kr/learn/courses/30/lessons/120898    
+    
+#### 변수    
+축하 문구 message    
+    
+#### 순서    
+JavaScript의 경우 length 메서드가 있어서 바로 값을 반환했다.    
+1. message.length에 2를 곱한 값을 반환    
+    
+#### 코드    
+다른 사람들의 답을 확인해봤지만 특별히 더 간단한 풀이는 없었다. 다른 언어로 해결할 경우 반복문을 써야 할 것 같다.    
+```JavaScript
+function solution(message) {
+    return message.length * 2;
+}
+```
