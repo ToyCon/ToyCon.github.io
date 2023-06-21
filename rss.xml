@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 Jun 2023 13:26:29 GMT</lastBuildDate><item><title><![CDATA[TIL16]]></title><description><![CDATA[Nextjs - useRouter client component에서 사용할 수 있음 useRouter를 불러올 때 'next/navigation'에서 import(router 아님) useRouter…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/189/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/189/</guid><pubDate>Tue, 20 Jun 2023 22:54:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Jun 2023 12:15:52 GMT</lastBuildDate><item><title><![CDATA[TIL17]]></title><description><![CDATA[MongoDB에 새로운 document 생성 insertOne()으로 하나의 document를 db에 생성할 수 있음 MongoDB 데이터 수정 updateOne()으로 게시물 수정 가능 JavaScript try catch 문법 db…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/190/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/190/</guid><pubDate>Wed, 21 Jun 2023 21:15:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;MongoDB에 새로운 document 생성
+&lt;ul&gt;
+&lt;li&gt;insertOne()으로 하나의 document를 db에 생성할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MongoDB 데이터 수정
+&lt;ul&gt;
+&lt;li&gt;updateOne()으로 게시물 수정 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;JavaScript try catch 문법
+&lt;ul&gt;
+&lt;li&gt;db를 불러오는데 실패했을 경우 적용 가능&lt;/li&gt;
+&lt;li&gt;정상적으로 실행할 코드를 try {} 내부에 작성&lt;/li&gt;
+&lt;li&gt;에러가 발생했을 경우 catch(err) {} 내부에 작성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL16]]></title><description><![CDATA[Nextjs - useRouter client component에서 사용할 수 있음 useRouter를 불러올 때 'next/navigation'에서 import(router 아님) useRouter…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/189/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/189/</guid><pubDate>Tue, 20 Jun 2023 22:54:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;Nextjs - useRouter
 &lt;ul&gt;
 &lt;li&gt;client component에서 사용할 수 있음&lt;/li&gt;
