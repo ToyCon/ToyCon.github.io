@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Jun 2023 12:15:52 GMT</lastBuildDate><item><title><![CDATA[TIL17]]></title><description><![CDATA[MongoDB에 새로운 document 생성 insertOne()으로 하나의 document를 db에 생성할 수 있음 MongoDB 데이터 수정 updateOne()으로 게시물 수정 가능 JavaScript try catch 문법 db…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/190/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/190/</guid><pubDate>Wed, 21 Jun 2023 21:15:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Jun 2023 13:41:40 GMT</lastBuildDate><item><title><![CDATA[TIL18]]></title><description><![CDATA[몽고DB 기능때문에 시행착오를 좀 많이 겪었다. 어렵지 않은 해결책이었는데 시간을 많이 쓴것 같다. 게시판 프로젝트 글 수정 기능 완성 form 태그로 전송할 경우 POST 요청 써야만 정상적으로 전송됨 redirect…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/191/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/191/</guid><pubDate>Thu, 22 Jun 2023 22:36:00 GMT</pubDate><content:encoded>&lt;p&gt;몽고DB 기능때문에 시행착오를 좀 많이 겪었다. 어렵지 않은 해결책이었는데 시간을 많이 쓴것 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;게시판 프로젝트 글 수정 기능 완성
+&lt;ul&gt;
+&lt;li&gt;form 태그로 전송할 경우 POST 요청 써야만 정상적으로 전송됨&lt;/li&gt;
+&lt;li&gt;redirect 문법으로 응답을 줄 경우 단일 url만 사용 가능. detail/title 이런식으로 리다이렉트가 불가능함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;몽고DB 데이터 수정 기능
+&lt;ul&gt;
+&lt;li&gt;updateOne() 기능 쓸 경우 $inc 연산자를 쓸 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL17]]></title><description><![CDATA[MongoDB에 새로운 document 생성 insertOne()으로 하나의 document를 db에 생성할 수 있음 MongoDB 데이터 수정 updateOne()으로 게시물 수정 가능 JavaScript try catch 문법 db…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/190/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/190/</guid><pubDate>Wed, 21 Jun 2023 21:15:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;MongoDB에 새로운 document 생성
 &lt;ul&gt;
 &lt;li&gt;insertOne()으로 하나의 document를 db에 생성할 수 있음&lt;/li&gt;
