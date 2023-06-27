@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Jun 2023 13:41:40 GMT</lastBuildDate><item><title><![CDATA[TIL18]]></title><description><![CDATA[몽고DB 기능때문에 시행착오를 좀 많이 겪었다. 어렵지 않은 해결책이었는데 시간을 많이 쓴것 같다. 게시판 프로젝트 글 수정 기능 완성 form 태그로 전송할 경우 POST 요청 써야만 정상적으로 전송됨 redirect…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/191/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/191/</guid><pubDate>Thu, 22 Jun 2023 22:36:00 GMT</pubDate><content:encoded>&lt;p&gt;몽고DB 기능때문에 시행착오를 좀 많이 겪었다. 어렵지 않은 해결책이었는데 시간을 많이 쓴것 같다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Jun 2023 11:30:37 GMT</lastBuildDate><item><title><![CDATA[TIL19]]></title><description><![CDATA[삭제 기능을 완성하려고 시간을 오래 써도 계속 안되서 힘들었는데 오늘 쉽게 완성이 됐다. 이런 경우가 종종 있다. 부트캠프에서 공부하던 것처럼 기술적 부채로 남겨놓고 다른 기능 먼저 진행해야겠다. 게시판 프로젝트 글 삭제 기능 완성 fetch('url…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/192/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/192/</guid><pubDate>Tue, 27 Jun 2023 20:30:00 GMT</pubDate><content:encoded>&lt;p&gt;삭제 기능을 완성하려고 시간을 오래 써도 계속 안되서 힘들었는데 오늘 쉽게 완성이 됐다. 이런 경우가 종종 있다. 부트캠프에서 공부하던 것처럼 기술적 부채로 남겨놓고 다른 기능 먼저 진행해야겠다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;게시판 프로젝트 글 삭제 기능 완성
+&lt;ul&gt;
+&lt;li&gt;fetch(&apos;url&apos;, {method: CRUD 기능에 맞춰서 적절한 메서드 &apos;&apos;안에, body: 메시지에 포함되어야 하는 내용})&lt;/li&gt;
+&lt;li&gt;body에 담을 내용이 많으면 객체에 담아서, JSON으로 보내기. JSON.stringify(전송할 object)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;몽고DB 데이터 삭제 기능
+&lt;ul&gt;
+&lt;li&gt;deleteOne() 함수. 가능하면 고유한 값을 가지는 _id로 검색&lt;/li&gt;
+&lt;li&gt;result로 담아서 출력하면 { acknowledged: true, deletedCount: 1 } 이렇게 뜸&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;검색 노출이 중요할 경우 글 제목같은 데이터는 부모 컴포넌트에서 props로 받아오기
+&lt;ul&gt;
+&lt;li&gt;useEffect를 써서 렌더링과 동시에 DB에서 데이터를 조회할 경우, 검색엔진이 웹페이지를 방문하면 내용이 없는 html문서를 조회함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;이모지 입력
+&lt;ul&gt;
+&lt;li&gt;vscode 익스텐션 :emojisense: 설치함&lt;/li&gt;
+&lt;li&gt;extension setting에서 edit in settings.json 눌러서 열고 &quot;javascript&quot;: true 추가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL18]]></title><description><![CDATA[몽고DB 기능때문에 시행착오를 좀 많이 겪었다. 어렵지 않은 해결책이었는데 시간을 많이 쓴것 같다. 게시판 프로젝트 글 수정 기능 완성 form 태그로 전송할 경우 POST 요청 써야만 정상적으로 전송됨 redirect…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/191/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/191/</guid><pubDate>Thu, 22 Jun 2023 22:36:00 GMT</pubDate><content:encoded>&lt;p&gt;몽고DB 기능때문에 시행착오를 좀 많이 겪었다. 어렵지 않은 해결책이었는데 시간을 많이 쓴것 같다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;게시판 프로젝트 글 수정 기능 완성
 &lt;ul&gt;
