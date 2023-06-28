@@ -1,14 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Jun 2023 11:30:37 GMT</lastBuildDate><item><title><![CDATA[TIL19]]></title><description><![CDATA[삭제 기능을 완성하려고 시간을 오래 써도 계속 안되서 힘들었는데 오늘 쉽게 완성이 됐다. 이런 경우가 종종 있다. 부트캠프에서 공부하던 것처럼 기술적 부채로 남겨놓고 다른 기능 먼저 진행해야겠다. 게시판 프로젝트 글 삭제 기능 완성 fetch('url…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/192/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/192/</guid><pubDate>Tue, 27 Jun 2023 20:30:00 GMT</pubDate><content:encoded>&lt;p&gt;삭제 기능을 완성하려고 시간을 오래 써도 계속 안되서 힘들었는데 오늘 쉽게 완성이 됐다. 이런 경우가 종종 있다. 부트캠프에서 공부하던 것처럼 기술적 부채로 남겨놓고 다른 기능 먼저 진행해야겠다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 28 Jun 2023 08:07:10 GMT</lastBuildDate><item><title><![CDATA[TIL20]]></title><description><![CDATA[여태까지 작업한 게시판 프로젝트를 처음으로 빌드했는데 오류가 났다. 에러 해결을 위해서 오늘은 학습 내용을 일찍 정리했다. 내일은 아마 에러 핸들링이 주요 내용이 될 것 같다. AJAX로 서버에서 보낸 메시지 받아서 추가 기능 실행 fetch…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/193/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/193/</guid><pubDate>Wed, 28 Jun 2023 17:06:00 GMT</pubDate><content:encoded>&lt;p&gt;여태까지 작업한 게시판 프로젝트를 처음으로 빌드했는데 오류가 났다. 에러 해결을 위해서 오늘은 학습 내용을 일찍 정리했다. 내일은 아마 에러 핸들링이 주요 내용이 될 것 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;AJAX로 서버에서 보낸 메시지 받아서 추가 기능 실행
+&lt;ul&gt;
+&lt;li&gt;fetch() 뒤에 promise 문법 .then() 붙여서 추가 기능 실행 가능, then((res) =&gt; { 실행할 함수 })&lt;/li&gt;
+&lt;li&gt;마지막에 에러 핸들링 위해서 .catch((err) =&gt; {에러 발생시 실행할 함수})&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;게시물 삭제에 애니메이션 기능 넣기
+&lt;ul&gt;
+&lt;li&gt;onClick으로 작성한 함수에 매개변수를 넣으면 해당 태그를 조작할 수 있음. 보통 e로 줄여서 전달&lt;/li&gt;
+&lt;li&gt;삭제 기능 쪽에서 응답 받은 다음 실행할 then() 함수에서 e를 조작하면 정상적으로 응답이 왔을 때 삭제 애니메이션 실행할 수 있음.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;query string
+&lt;ul&gt;
+&lt;li&gt;장점 : 간단한 값은 서버에 간단하게 전송 가능, GET 요청도 데이터 전송가능({method: &apos;GET&apos;, body: 보내고 싶은 값} 이렇게 전송 불가능)&lt;/li&gt;
+&lt;li&gt;단점 : 데이터가 많으면 더러움, 보안문제 → URL에 데이터가 보이는데 만약 유저 id와 pw가 노출된다면?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;url 파라미터 문법
+&lt;ul&gt;
+&lt;li&gt;api 폴더 하위에 다이나믹라우트와 똑같이 폴더, 파일명 만들고 fetch(&apos;/api/폴더/파일명&apos;)&lt;/li&gt;
+&lt;li&gt;서버에서 req.query 조회해서 데이터 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;static rendering, dynamic rendering
+&lt;ul&gt;
+&lt;li&gt;build 실행해서 확인할 수 있는 페이지 앞에 원 기호가 있으면 static rendering, 람다 기호 있으면 dynamic rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL19]]></title><description><![CDATA[삭제 기능을 완성하려고 시간을 오래 써도 계속 안되서 힘들었는데 오늘 쉽게 완성이 됐다. 이런 경우가 종종 있다. 부트캠프에서 공부하던 것처럼 기술적 부채로 남겨놓고 다른 기능 먼저 진행해야겠다. 게시판 프로젝트 글 삭제 기능 완성 fetch('url…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/192/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/192/</guid><pubDate>Tue, 27 Jun 2023 20:30:00 GMT</pubDate><content:encoded>&lt;p&gt;삭제 기능을 완성하려고 시간을 오래 써도 계속 안되서 힘들었는데 오늘 쉽게 완성이 됐다. 이런 경우가 종종 있다. 부트캠프에서 공부하던 것처럼 기술적 부채로 남겨놓고 다른 기능 먼저 진행해야겠다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;게시판 프로젝트 글 삭제 기능 완성
 &lt;ul&gt;
 &lt;li&gt;fetch(&apos;url&apos;, {method: CRUD 기능에 맞춰서 적절한 메서드 &apos;&apos;안에, body: 메시지에 포함되어야 하는 내용})&lt;/li&gt;
-&lt;li&gt;body에 담을 내용이 많으면 객체에 담아서, JSON으로 보내기. JSON.stringify(전송할 object)&lt;/li&gt;
+&lt;li&gt;body에 담을 내용이 많으면 객체에 담아서 JSON으로 보내기. 보낼때는 JSON.stringify(전송할 object), 받을때는 JSON.parse(전송받은 object)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;몽고DB 데이터 삭제 기능
 &lt;ul&gt;
-&lt;li&gt;deleteOne() 함수. 가능하면 고유한 값을 가지는 _id로 검색&lt;/li&gt;
+&lt;li&gt;deleteOne() 함수. 고유한 값을 가지는 _id로 검색&lt;/li&gt;
 &lt;li&gt;result로 담아서 출력하면 { acknowledged: true, deletedCount: 1 } 이렇게 뜸&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
