@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 28 Jun 2023 08:07:10 GMT</lastBuildDate><item><title><![CDATA[TIL20]]></title><description><![CDATA[여태까지 작업한 게시판 프로젝트를 처음으로 빌드했는데 오류가 났다. 에러 해결을 위해서 오늘은 학습 내용을 일찍 정리했다. 내일은 아마 에러 핸들링이 주요 내용이 될 것 같다. AJAX로 서버에서 보낸 메시지 받아서 추가 기능 실행 fetch…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/193/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/193/</guid><pubDate>Wed, 28 Jun 2023 17:06:00 GMT</pubDate><content:encoded>&lt;p&gt;여태까지 작업한 게시판 프로젝트를 처음으로 빌드했는데 오류가 났다. 에러 해결을 위해서 오늘은 학습 내용을 일찍 정리했다. 내일은 아마 에러 핸들링이 주요 내용이 될 것 같다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 30 Jun 2023 06:16:58 GMT</lastBuildDate><item><title><![CDATA[Error: Failed to collect page data for]]></title><description><![CDATA[엊그제 npm run build 명령어로 배포 빌드 생성시 발생했던 오류와 해결 방법을 기록해둔다. 이런 오류 메시지가 뜨면서 빌드 중간에 멈추는 현상이 발생했다. 계속 검색을 하다가 답을 찾았다.
+https://github.com/vercel…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/194/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/194/</guid><pubDate>Fri, 30 Jun 2023 15:16:00 GMT</pubDate><content:encoded>&lt;p&gt;엊그제 npm run build 명령어로 배포 빌드 생성시 발생했던 오류와 해결 방법을 기록해둔다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;info  - Creating an optimized production build .ReferenceError: options is not defined
+    at 3599 (/home/hyeondeok/refresh/.next/server/app/edit/[postId]/page.js:334:75)
+    at __webpack_require__ (/home/hyeondeok/refresh/.next/server/webpack-runtime.js:25:42)
+    at 4218 (/home/hyeondeok/refresh/.next/server/app/edit/[postId]/page.js:250:72)
+    at Function.__webpack_require__ (/home/hyeondeok/refresh/.next/server/webpack-runtime.js:25:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async collectGenerateParams (/home/hyeondeok/refresh/node_modules/next/dist/build/utils.js:741:17)
+
+&gt; Build error occurred
+Error: Failed to collect page data for /edit/[postId]
+    at /home/hyeondeok/refresh/node_modules/next/dist/build/utils.js:1055:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  type: &apos;Error&apos;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이런 오류 메시지가 뜨면서 빌드 중간에 멈추는 현상이 발생했다. 계속 검색을 하다가 답을 찾았다.
+&lt;a href=&quot;https://github.com/vercel/next.js/discussions/34249&quot;&gt;https://github.com/vercel/next.js/discussions/34249&lt;/a&gt;
+이게 정답이었다. next.config.json 파일에 설정을 추가해주니 해결됐다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; nextConfig &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;experimental&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;appDir&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;//&gt;&gt;아래 코드 추가했음&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;pageExtensions&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;page.tsx&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;page.ts&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;page.jsx&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;page.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위의 깃허브 포럼에서 공식 문서 링크(&lt;a href=&quot;https://nextjs.org/docs/pages/api-reference/next-config-js/pageExtensions#including-non-page-files-in-the-pages-directory&quot;&gt;https://nextjs.org/docs/pages/api-reference/next-config-js/pageExtensions#including-non-page-files-in-the-pages-directory&lt;/a&gt;
+)를 연결해줬다. 테스트 관련 설정같은데 읽어보고 이 포스트에 내용을 추가하거나 새로 포스트를 작성해서 정리해둬야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[TIL20]]></title><description><![CDATA[여태까지 작업한 게시판 프로젝트를 처음으로 빌드했는데 오류가 났다. 에러 해결을 위해서 오늘은 학습 내용을 일찍 정리했다. 내일은 아마 에러 핸들링이 주요 내용이 될 것 같다. AJAX로 서버에서 보낸 메시지 받아서 추가 기능 실행 fetch…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/193/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/193/</guid><pubDate>Wed, 28 Jun 2023 17:06:00 GMT</pubDate><content:encoded>&lt;p&gt;여태까지 작업한 게시판 프로젝트를 처음으로 빌드했는데 오류가 났다. 에러 해결을 위해서 오늘은 학습 내용을 일찍 정리했다. 내일은 아마 에러 핸들링이 주요 내용이 될 것 같다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;AJAX로 서버에서 보낸 메시지 받아서 추가 기능 실행
 &lt;ul&gt;
@@ -91,7 +118,7 @@
 &lt;li&gt;client component에서 사용할 수 있음&lt;/li&gt;
 &lt;li&gt;useRouter를 불러올 때 &apos;next/navigation&apos;에서 import(router 아님)&lt;/li&gt;
 &lt;li&gt;useRouter에서 쓸수 있는 기능들은 공식문서에 설명 있음(&lt;a href=&quot;https://nextjs.org/docs/pages/api-reference/functions/use-router&quot;&gt;https://nextjs.org/docs/pages/api-reference/functions/use-router&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;useRouter 기능중에 prefetch를 통해 링크 문서를 미리 받아놓을 수 있는데, Link 태그가 prefetch 기능을 포함하고 있음. Link 태그로 많은 링크를 불러올 경우 prefetch={flase} 지정해서 prefetch 막을 수 있음&lt;/li&gt;
+&lt;li&gt;useRouter 기능중에 prefetch를 통해 링크 문서를 미리 받아놓을 수 있는데, Link 태그가 prefetch 기능을 포함하고 있음. Link 태그로 많은 링크를 불러올 경우 prefetch={false} 지정해서 prefetch 막을 수 있음&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Nextjs 서버 생성
