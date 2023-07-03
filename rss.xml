@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 30 Jun 2023 06:16:58 GMT</lastBuildDate><item><title><![CDATA[Error: Failed to collect page data for]]></title><description><![CDATA[엊그제 npm run build 명령어로 배포 빌드 생성시 발생했던 오류와 해결 방법을 기록해둔다. 이런 오류 메시지가 뜨면서 빌드 중간에 멈추는 현상이 발생했다. 계속 검색을 하다가 답을 찾았다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Jul 2023 11:20:30 GMT</lastBuildDate><item><title><![CDATA[TIL21]]></title><description><![CDATA[build를 실행하고 난 뒤 npm run dev 명령어로도, build 후 npm run start도 실행해도 40…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/195/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/195/</guid><pubDate>Mon, 03 Jul 2023 20:20:00 GMT</pubDate><content:encoded>&lt;p&gt;build를 실행하고 난 뒤 npm run dev 명령어로도, build 후 npm run start도 실행해도 404 페이지로 연결되는 상황이 발생했다. 파일들을 하나씩 되돌리면서 실행해도 계속 같은 증상이 나와 어쩔 수 없이 프로젝트를 아예 새로 생성하고 build를 수시로 실행하면서 오류가 나지 않는지 체크하면서 진행했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;에러 발생
+&lt;ul&gt;
+&lt;li&gt;list 페이지에서 삭제기능 추가하기 위해서 클라이언트 컴포넌트를 하위 컴포넌트로 추가, db에서 불러오는 기능을 이관&lt;/li&gt;
+&lt;li&gt;에러 메시지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Warning: Only plain objects can be passed to Client Components from Server Components. Objects with toJSON methods are not supported. Convert it manually to a simple value before passing it to props.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;list 페이지에서&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  a&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_id &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_id&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; a
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+추가해서 실행&lt;/li&gt;
+&lt;li&gt;빌드한 뒤 npm run start로 실행했을때 에러 발생&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;에러 메시지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Unhandled Runtime Error ChunkLoadError: Loading chunk 272 failed.
+(missing: http://localhost:3000/_next/static/chunks/webpack-498aab44f1ab4ab1.js)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;검색결과 기존에 빌드했던 .next 폴더를 지우고 재실행하면 된다고 해서 그대로 해결&lt;a href=&quot;http://itpsolver.com/react-next-js-chunkloaderror-loading-chunk-node_modules_next_dist_client_dev_noop_js-failed-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0/&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Error: Failed to collect page data for]]></title><description><![CDATA[엊그제 npm run build 명령어로 배포 빌드 생성시 발생했던 오류와 해결 방법을 기록해둔다. 이런 오류 메시지가 뜨면서 빌드 중간에 멈추는 현상이 발생했다. 계속 검색을 하다가 답을 찾았다.
 https://github.com/vercel…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/194/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/194/</guid><pubDate>Fri, 30 Jun 2023 15:16:00 GMT</pubDate><content:encoded>&lt;p&gt;엊그제 npm run build 명령어로 배포 빌드 생성시 발생했던 오류와 해결 방법을 기록해둔다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;info  - Creating an optimized production build .ReferenceError: options is not defined
     at 3599 (/home/hyeondeok/refresh/.next/server/app/edit/[postId]/page.js:334:75)
