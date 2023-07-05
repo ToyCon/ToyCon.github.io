@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Jul 2023 16:39:49 GMT</lastBuildDate><item><title><![CDATA[TIL22]]></title><description><![CDATA[렌더링 전환 반대의 경우 'force-static', 'auto'는 자동으로 판단 fetch 함수로 캐싱 fetch('url', { cache: 'force-cache' }) fetch('/URL', { next: { revalidate: 6…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/196/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/196/</guid><pubDate>Wed, 05 Jul 2023 01:39:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 05 Jul 2023 16:59:57 GMT</lastBuildDate><item><title><![CDATA[TIL23]]></title><description><![CDATA[Oauth 로그인 기능 프로바이더 앱 등록, next-auth 설치 jwt + session 방식은 adapter 추가 설치 getServerSession 서버에 저장된 로그인 정보 불러오는 함수 CRUD…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/197/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/197/</guid><pubDate>Thu, 06 Jul 2023 01:58:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+&lt;li&gt;Oauth 로그인 기능&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;프로바이더 앱 등록, next-auth 설치&lt;/li&gt;
+&lt;li&gt;jwt + session 방식은 adapter 추가 설치&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;getServerSession&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;서버에 저장된 로그인 정보 불러오는 함수&lt;/li&gt;
+&lt;li&gt;CRUD 기능 실행할 때 본인이 맞는지 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;아이디/비번 + jwt 방식&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;암호화 라이브러리 bcrypt 사용&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[TIL22]]></title><description><![CDATA[렌더링 전환 반대의 경우 'force-static', 'auto'는 자동으로 판단 fetch 함수로 캐싱 fetch('url', { cache: 'force-cache' }) fetch('/URL', { next: { revalidate: 6…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/196/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/196/</guid><pubDate>Wed, 05 Jul 2023 01:39:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;렌더링 전환
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; dynamic &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;force-dynamic&apos;&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// 다이나믹 렌더링 페이지&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
