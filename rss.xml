@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 05 Jul 2023 16:59:57 GMT</lastBuildDate><item><title><![CDATA[TIL23]]></title><description><![CDATA[Oauth 로그인 기능 프로바이더 앱 등록, next-auth 설치 jwt + session 방식은 adapter 추가 설치 getServerSession 서버에 저장된 로그인 정보 불러오는 함수 CRUD…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/197/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/197/</guid><pubDate>Thu, 06 Jul 2023 01:58:00 GMT</pubDate><content:encoded>&lt;ol&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Jul 2023 10:46:23 GMT</lastBuildDate><item><title><![CDATA[TIL24]]></title><description><![CDATA[백엔드는 직접 만들어봤기에 오늘은 시간이 조금 걸려도 어려움없이 기능을 구현할 수 있었다. 코드가 지저분하지만 기능 구현에 집중했다. bcrypt 비밀번호를 암호화하는 라이브러리 hash(암호화할 변수, 암호화 횟수) round…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/198/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/198/</guid><pubDate>Thu, 06 Jul 2023 19:45:00 GMT</pubDate><content:encoded>&lt;p&gt;백엔드는 직접 만들어봤기에 오늘은 시간이 조금 걸려도 어려움없이 기능을 구현할 수 있었다. 코드가 지저분하지만 기능 구현에 집중했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;bcrypt
+&lt;ul&gt;
+&lt;li&gt;비밀번호를 암호화하는 라이브러리&lt;/li&gt;
+&lt;li&gt;hash(암호화할 변수, 암호화 횟수)&lt;/li&gt;
+&lt;li&gt;round는 &lt;a href=&quot;https://www.npmjs.com/package/bcrypt&quot;&gt;공식문서&lt;/a&gt;에 설명, 2GHz CPu 기준으로 최대 10회(~10 hashes/sec)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ID + 비밀번호 회원 기능
+&lt;ul&gt;
+&lt;li&gt;mongodb에 별도 폴더 만들어서 저장 가능&lt;/li&gt;
+&lt;li&gt;CredentialsProvider 함수  가져와서 [...nextauth].js에 적용&lt;/li&gt;
+&lt;li&gt;권한 구현, admin은 모든 게시물에 접근하고 삭제할수 있음&lt;/li&gt;
+&lt;li&gt;로그인 했을 때 게시물 보여주기 기능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;.env
+&lt;ul&gt;
+&lt;li&gt;nextjs는 환경변수 사용하는 모듈 내장(react는 dotenv 가져다 썼음)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL23]]></title><description><![CDATA[Oauth 로그인 기능 프로바이더 앱 등록, next-auth 설치 jwt + session 방식은 adapter 추가 설치 getServerSession 서버에 저장된 로그인 정보 불러오는 함수 CRUD…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/197/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/197/</guid><pubDate>Thu, 06 Jul 2023 01:58:00 GMT</pubDate><content:encoded>&lt;ol&gt;
 &lt;li&gt;Oauth 로그인 기능&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
