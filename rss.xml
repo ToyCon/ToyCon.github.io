@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 Jul 2023 10:46:23 GMT</lastBuildDate><item><title><![CDATA[TIL24]]></title><description><![CDATA[백엔드는 직접 만들어봤기에 오늘은 시간이 조금 걸려도 어려움없이 기능을 구현할 수 있었다. 코드가 지저분하지만 기능 구현에 집중했다. bcrypt 비밀번호를 암호화하는 라이브러리 hash(암호화할 변수, 암호화 횟수) round…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/198/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/198/</guid><pubDate>Thu, 06 Jul 2023 19:45:00 GMT</pubDate><content:encoded>&lt;p&gt;백엔드는 직접 만들어봤기에 오늘은 시간이 조금 걸려도 어려움없이 기능을 구현할 수 있었다. 코드가 지저분하지만 기능 구현에 집중했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Jul 2023 14:55:25 GMT</lastBuildDate><item><title><![CDATA[TIL25]]></title><description><![CDATA[한 주동안 손을 못대서 강의를 돌려보고 댓글 기능 구현을 위해서 필요한 내용을 검색했다. Date Date 함수로 날짜 불러오기, 대한민국 표준시로 맞추기(https://codechacha.com/ko/javascript-add-time-to-date…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/199/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/199/</guid><pubDate>Thu, 13 Jul 2023 23:55:00 GMT</pubDate><content:encoded>&lt;p&gt;한 주동안 손을 못대서 강의를 돌려보고 댓글 기능 구현을 위해서 필요한 내용을 검색했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Date
+&lt;ul&gt;
+&lt;li&gt;Date 함수로 날짜 불러오기, 대한민국 표준시로 맞추기(&lt;a href=&quot;https://codechacha.com/ko/javascript-add-time-to-date/&quot;&gt;https://codechacha.com/ko/javascript-add-time-to-date/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;몽고DB id에서 시간 꺼내오기
+&lt;ul&gt;
+&lt;li&gt;_id를 BSON 해석해서 시간으로 변환 가능(&lt;a href=&quot;https://domdom.tistory.com/393&quot;&gt;https://domdom.tistory.com/393&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;몽고DB는 그리니치 표준시(UTC+0) 일괄 적용&lt;/li&gt;
+&lt;li&gt;몽고DB 자체에서 일관성있게 UTC+0 쓰기 때문에, id에서 시간을 불러와서 9시간 추가해주면 한국 시간으로 표시할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL24]]></title><description><![CDATA[백엔드는 직접 만들어봤기에 오늘은 시간이 조금 걸려도 어려움없이 기능을 구현할 수 있었다. 코드가 지저분하지만 기능 구현에 집중했다. bcrypt 비밀번호를 암호화하는 라이브러리 hash(암호화할 변수, 암호화 횟수) round…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/198/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/198/</guid><pubDate>Thu, 06 Jul 2023 19:45:00 GMT</pubDate><content:encoded>&lt;p&gt;백엔드는 직접 만들어봤기에 오늘은 시간이 조금 걸려도 어려움없이 기능을 구현할 수 있었다. 코드가 지저분하지만 기능 구현에 집중했다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;bcrypt
 &lt;ul&gt;
