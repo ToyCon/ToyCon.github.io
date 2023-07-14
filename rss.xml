@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 13 Jul 2023 14:55:25 GMT</lastBuildDate><item><title><![CDATA[TIL25]]></title><description><![CDATA[한 주동안 손을 못대서 강의를 돌려보고 댓글 기능 구현을 위해서 필요한 내용을 검색했다. Date Date 함수로 날짜 불러오기, 대한민국 표준시로 맞추기(https://codechacha.com/ko/javascript-add-time-to-date…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/199/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/199/</guid><pubDate>Thu, 13 Jul 2023 23:55:00 GMT</pubDate><content:encoded>&lt;p&gt;한 주동안 손을 못대서 강의를 돌려보고 댓글 기능 구현을 위해서 필요한 내용을 검색했다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 14 Jul 2023 14:43:01 GMT</lastBuildDate><item><title><![CDATA[TIL26]]></title><description><![CDATA[몽고db id에서 document…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/200/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/200/</guid><pubDate>Fri, 14 Jul 2023 23:42:00 GMT</pubDate><content:encoded>&lt;p&gt;몽고db id에서 document가 작성된 시간을 확인하는 것은 성공했다. 그런데 그게 복잡하지 않은 과정이더라도 그 수가 늘어나면 매번 서버도 시간을 계산해야 하고 클라이언트도 시간을 계산하는 과정이 실행되서 비효율적이라는 것을 깨달았다. 그냥 몽고db에 작성 시간을 별도로 입력하면 간편하게 처리가 가능하기 때문에 작성 시간을 추가로 저장하기로 했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;시간 꺼내는 코드&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getKST&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;postId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;postId&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;몽고db document에서 시간 다루기
+&lt;ul&gt;
+&lt;li&gt;클라이언트 or 서버에서 new Date로 시간을 생성해서 몽고디비로 보내도 자동으로 ISODate 형식으로 저장&lt;/li&gt;
+&lt;li&gt;줄루 타임이므로 +9시간 해주는 과정은 거쳐야 함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;loading.js, error.js, not-found.js
+&lt;ul&gt;
+&lt;li&gt;로딩 인터페이스 넣을 때 loading.js, 같은 폴더 안에 넣으면 자동으로 적용&lt;/li&gt;
+&lt;li&gt;app 폴더 바로 아래에 넣어주면 모든 페이지에 적용 가능, error.js, not-found.js도 동일&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL25]]></title><description><![CDATA[한 주동안 손을 못대서 강의를 돌려보고 댓글 기능 구현을 위해서 필요한 내용을 검색했다. Date Date 함수로 날짜 불러오기, 대한민국 표준시로 맞추기(https://codechacha.com/ko/javascript-add-time-to-date…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/199/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/199/</guid><pubDate>Thu, 13 Jul 2023 23:55:00 GMT</pubDate><content:encoded>&lt;p&gt;한 주동안 손을 못대서 강의를 돌려보고 댓글 기능 구현을 위해서 필요한 내용을 검색했다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Date
 &lt;ul&gt;
