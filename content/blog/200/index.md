@@ -15,5 +15,5 @@ export default function getKST(postId){
     - 줄루 타임이므로 +9시간 해주는 과정은 거쳐야 함    
 3. loading.js, error.js, not-found.js    
    - 로딩 인터페이스 넣을 때 loading.js, 같은 폴더 안에 넣으면 자동으로 적용    
-   - 클라이언트 컴포넌트로 만들어야 함    
+   - error.js의 경우 클라이언트 컴포넌트로 만들어야 함    
    - app 폴더 바로 아래에 넣어주면 모든 페이지에 적용 가능, error.js, not-found.js도 동일
