@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 18 Jul 2023 10:41:30 GMT</lastBuildDate><item><title><![CDATA[TIL27]]></title><description><![CDATA[슬슬 기능을 구현하거나 수정하는 데 시간이 오래 걸려서 하루에 한 일을 정리하기가 쉽지 않다. 작업하면서 의문이 들었던 내용을 따로 적어뒀다가 검색해 보면서 학습을 하려고 한다. useState…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/201/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/201/</guid><pubDate>Tue, 18 Jul 2023 19:41:00 GMT</pubDate><content:encoded>&lt;p&gt;슬슬 기능을 구현하거나 수정하는 데 시간이 오래 걸려서 하루에 한 일을 정리하기가 쉽지 않다. 작업하면서 의문이 들었던 내용을 따로 적어뒀다가 검색해 보면서 학습을 하려고 한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 Jul 2023 11:26:49 GMT</lastBuildDate><item><title><![CDATA[TIL28]]></title><description><![CDATA[이미지 관련 기능을 구현하는데 계속 에러가 났다. 컴파일 단계에서 에러가 나서 정상적으로 실행이 불가능해서 일단 에러 코드만 기록해놓고 다른 기능을 구현하고 있다. db쪽을 업데이트했는데 mongosh로 update…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/202/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/202/</guid><pubDate>Thu, 20 Jul 2023 20:20:00 GMT</pubDate><content:encoded>&lt;p&gt;이미지 관련 기능을 구현하는데 계속 에러가 났다. 컴파일 단계에서 에러가 나서 정상적으로 실행이 불가능해서 일단 에러 코드만 기록해놓고 다른 기능을 구현하고 있다. db쪽을 업데이트했는데 mongosh로 update 함수로 값을 업데이트하는 과정도 정상적으로 작동하지 않아서 이것도 힘들다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;몽고db updateOne() 작동을 안함
+&lt;ul&gt;
+&lt;li&gt;글을 완전히 db에서 삭제하지 않고 isDeleted라는 항목을 별도로 생성, 서버에서 메시지를 받으면 해당 값을 true로 바꾸는 코드를 작성했으나 해당 기능이 작동하지 않음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; db &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; connectDB&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;board&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;await&lt;/span&gt; db&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;post&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;deleteOne&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token literal-property property&quot;&gt;_id&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ObjectId&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;_id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// deletedCheck 항목으로 업데이트가 안되서 일단 스킵(7/20/15:40)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// let result = await db.collection(&apos;post&apos;).&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   updateOne({_id: new ObjectId(req.body._id)}, {$set: {deleteCheck: 1}});&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// console.log(result);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;input&gt; 태그에 이미지 삽입 기능 구현했을때 발생한 컴파일 에러 기록&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;wait  - compiling /write/page (client and server)...
+error - ./node_modules/@mapbox/node-pre-gyp/lib/clean.js:8:0
+Module not found: Can&apos;t resolve &apos;fs&apos;
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/@mapbox/node-pre-gyp/lib/ sync ^\.\/.*$
+./node_modules/@mapbox/node-pre-gyp/lib/node-pre-gyp.js
+./node_modules/bcrypt/bcrypt.js
+./pages/api/auth/[...nextauth].js
+./app/write/page.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL27]]></title><description><![CDATA[슬슬 기능을 구현하거나 수정하는 데 시간이 오래 걸려서 하루에 한 일을 정리하기가 쉽지 않다. 작업하면서 의문이 들었던 내용을 따로 적어뒀다가 검색해 보면서 학습을 하려고 한다. useState…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/201/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/201/</guid><pubDate>Tue, 18 Jul 2023 19:41:00 GMT</pubDate><content:encoded>&lt;p&gt;슬슬 기능을 구현하거나 수정하는 데 시간이 오래 걸려서 하루에 한 일을 정리하기가 쉽지 않다. 작업하면서 의문이 들었던 내용을 따로 적어뒀다가 검색해 보면서 학습을 하려고 한다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;useState 추적 변수
 &lt;ul&gt;
