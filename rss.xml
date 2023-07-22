@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 Jul 2023 11:26:49 GMT</lastBuildDate><item><title><![CDATA[TIL28]]></title><description><![CDATA[이미지 관련 기능을 구현하는데 계속 에러가 났다. 컴파일 단계에서 에러가 나서 정상적으로 실행이 불가능해서 일단 에러 코드만 기록해놓고 다른 기능을 구현하고 있다. db쪽을 업데이트했는데 mongosh로 update…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/202/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/202/</guid><pubDate>Thu, 20 Jul 2023 20:20:00 GMT</pubDate><content:encoded>&lt;p&gt;이미지 관련 기능을 구현하는데 계속 에러가 났다. 컴파일 단계에서 에러가 나서 정상적으로 실행이 불가능해서 일단 에러 코드만 기록해놓고 다른 기능을 구현하고 있다. db쪽을 업데이트했는데 mongosh로 update 함수로 값을 업데이트하는 과정도 정상적으로 작동하지 않아서 이것도 힘들다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 22 Jul 2023 12:21:53 GMT</lastBuildDate><item><title><![CDATA[TIL29]]></title><description><![CDATA[prefers-color-scheme을 검색하면서 미디어 쿼리를 처음으로 알게됐다. 부트캠프 당시에 프론트 쪽 내용에 너무 관심을 두지 않았던 것 같아서 부끄럽다. 앞으로 만들 프로젝트를 하면서 같이 공부해야겠다. prefers-color-scheme…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/203/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/203/</guid><pubDate>Sat, 22 Jul 2023 21:22:00 GMT</pubDate><content:encoded>&lt;p&gt;prefers-color-scheme을 검색하면서 미디어 쿼리를 처음으로 알게됐다. 부트캠프 당시에 프론트 쪽 내용에 너무 관심을 두지 않았던 것 같아서 부끄럽다. 앞으로 만들 프로젝트를 하면서 같이 공부해야겠다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;prefers-color-scheme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;라이트 모드 / 다크 모드를 선택&lt;/li&gt;
+&lt;li&gt;CSS 파일에 라이트 모드 / 다크 모드에 적용할 스타일을 각각 작성(사용법은 &lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/CSS/@media/prefers-color-scheme&quot;&gt;MDN 공식문서&lt;/a&gt;에 잘 나와있음)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;nextjs에서 쿠키 다루기&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;서버 컴포넌트에서 쉽게 다룰 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; cookies &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;next/headers&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;DarkBtn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//코드 생략, 쿠키 불러오기&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; colorCheck &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;cookies&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;setColor&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; colorCheck &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;light&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[TIL28]]></title><description><![CDATA[이미지 관련 기능을 구현하는데 계속 에러가 났다. 컴파일 단계에서 에러가 나서 정상적으로 실행이 불가능해서 일단 에러 코드만 기록해놓고 다른 기능을 구현하고 있다. db쪽을 업데이트했는데 mongosh로 update…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/202/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/202/</guid><pubDate>Thu, 20 Jul 2023 20:20:00 GMT</pubDate><content:encoded>&lt;p&gt;이미지 관련 기능을 구현하는데 계속 에러가 났다. 컴파일 단계에서 에러가 나서 정상적으로 실행이 불가능해서 일단 에러 코드만 기록해놓고 다른 기능을 구현하고 있다. db쪽을 업데이트했는데 mongosh로 update 함수로 값을 업데이트하는 과정도 정상적으로 작동하지 않아서 이것도 힘들다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;몽고db updateOne() 작동을 안함
 &lt;ul&gt;
