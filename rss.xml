@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 24 Jul 2023 11:54:43 GMT</lastBuildDate><item><title><![CDATA[TIL30]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/204/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/204/</guid><pubDate>Mon, 24 Jul 2023 20:54:00 GMT</pubDate><content:encoded>&lt;p&gt;다크모드를 구현하는데 쿠키가 의도한 값이 아닐때 걸러줄 조건을 ||로 작성해서 한참 해맸다. 이미지 업로드, 미들웨어 기능은 이번에 만든 연습 프로젝트에서는 사용하지 않고 다음에 본격적으로 혼자서 만들 프로젝트에 적용하려고 한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Jul 2023 12:58:03 GMT</lastBuildDate><item><title><![CDATA[oneul.me 프로젝트 일지 1]]></title><description><![CDATA[예전에 듀얼 부팅으로 설치한 OS 관리에 어려움을 느끼고 우분투를 사용하는 작업용 PC를 따로 한대 만들었다. PC…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/205/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/205/</guid><pubDate>Thu, 27 Jul 2023 22:12:00 GMT</pubDate><content:encoded>&lt;p&gt;예전에 듀얼 부팅으로 설치한 OS 관리에 어려움을 느끼고 우분투를 사용하는 작업용 PC를 따로 한대 만들었다. PC가 두 대이고, 스마트폰과 태블릿까지 합치면 총 네 개의 전자기기를 사용하는데 할일과 일정을 통합해서 관리할 수 있는 어플리케이션이 있으면 좋겠다는 생각을 부트캠프 시절부터 했었다. 브라우저를 켰을 때 제일 처음에 실행되는 웹 어플리케이션이면 기기를 가리지 않고 찾아볼 수 있어서 괜찮다고 생각했는데, 부트캠프 수료 프로젝트는 지나치게 흔한 기능은 좋지 않다고 하여 실행에 옮기지 못했다. 앞으로 계속 사용하면서 기능을 추가하는 개인 프로젝트로는 적합한 것 같아서 실행에 옮기려고 한다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;프로젝트 목적
+&lt;ul&gt;
+&lt;li&gt;일정 관리 웹 어플리케이션&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;핵심 기능
+&lt;ul&gt;
+&lt;li&gt;일정 관리 기능(CRUD &gt; 일정을 생성하고, 불러오고, 그 일정을 수행했는지 체크하며, 지우는 대신 해당 일정이 반복 일정일 경우 다음 날짜에 생성하기)&lt;/li&gt;
+&lt;li&gt;구글 OAUTH&lt;/li&gt;
+&lt;li&gt;PC와 모바일에서 별도의 UI 구현&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;사용할 예정인 기술 스택
+&lt;ul&gt;
+&lt;li&gt;nextjs, react, firebase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;오늘 한 일
+&lt;ul&gt;
+&lt;li&gt;레포지토리 및 프로젝트 생성&lt;/li&gt;
+&lt;li&gt;도메인 구입&lt;/li&gt;
+&lt;li&gt;구글 firebase 프로젝트 생성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;내일 할 일
+&lt;ul&gt;
+&lt;li&gt;프로젝트 최초 배포 및 구입한 도메인 연동&lt;/li&gt;
+&lt;li&gt;위에 성공하면 api 수기로 작성해보기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[TIL30]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/204/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/204/</guid><pubDate>Mon, 24 Jul 2023 20:54:00 GMT</pubDate><content:encoded>&lt;p&gt;다크모드를 구현하는데 쿠키가 의도한 값이 아닐때 걸러줄 조건을 ||로 작성해서 한참 해맸다. 이미지 업로드, 미들웨어 기능은 이번에 만든 연습 프로젝트에서는 사용하지 않고 다음에 본격적으로 혼자서 만들 프로젝트에 적용하려고 한다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;쿠키 생성하거나 수정하기
 &lt;ul&gt;
