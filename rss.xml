@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 27 Jul 2023 12:58:03 GMT</lastBuildDate><item><title><![CDATA[oneul.me 프로젝트 일지 1]]></title><description><![CDATA[예전에 듀얼 부팅으로 설치한 OS 관리에 어려움을 느끼고 우분투를 사용하는 작업용 PC를 따로 한대 만들었다. PC…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/205/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/205/</guid><pubDate>Thu, 27 Jul 2023 22:12:00 GMT</pubDate><content:encoded>&lt;p&gt;예전에 듀얼 부팅으로 설치한 OS 관리에 어려움을 느끼고 우분투를 사용하는 작업용 PC를 따로 한대 만들었다. PC가 두 대이고, 스마트폰과 태블릿까지 합치면 총 네 개의 전자기기를 사용하는데 할일과 일정을 통합해서 관리할 수 있는 어플리케이션이 있으면 좋겠다는 생각을 부트캠프 시절부터 했었다. 브라우저를 켰을 때 제일 처음에 실행되는 웹 어플리케이션이면 기기를 가리지 않고 찾아볼 수 있어서 괜찮다고 생각했는데, 부트캠프 수료 프로젝트는 지나치게 흔한 기능은 좋지 않다고 하여 실행에 옮기지 못했다. 앞으로 계속 사용하면서 기능을 추가하는 개인 프로젝트로는 적합한 것 같아서 실행에 옮기려고 한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Jul 2023 13:36:27 GMT</lastBuildDate><item><title><![CDATA[oneul.me 프로젝트 일지 2]]></title><description><![CDATA[…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/206/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/206/</guid><pubDate>Mon, 31 Jul 2023 22:05:00 GMT</pubDate><content:encoded>&lt;p&gt;구글 클라우드에 버킷을 만들어서 프로젝트를 배포하기 위한 과정을 실행하려고 했는데 결제 수단을 등록해야 하는 과정이 있어서 잠깐 멈췄다. 혹시라도 결제가 발생할 수 있어서 내일 구글 클라우드 및 파이어베이스와 관련된 부분들을 한꺼번에 처리하려고 한다. 오늘은 기능을 고민해보고 서버 기능을 구현할 URL과 파이어스토어에 저장할 문서의 구조를 손으로 정리했다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;오늘 한 일
+&lt;ul&gt;
+&lt;li&gt;API 구성해보기&lt;/li&gt;
+&lt;li&gt;URL은 /api/mywork/create(할 일 생성), list(할 일을 하루 단위로 조회), done(빈 체크박스에 체크 표시), undone(체크 표시를 다시 빈칸으로 돌린 경우), history(과거 날짜에 내가 했던 일을 조회), delete(앱 목적상 지우는 기능이 있으면 안되는데 잘못 생성해서 지워야 할 경우가 있으므로 구현)&lt;/li&gt;
+&lt;li&gt;HTTP 메서드는 목적에 맞춰서 create-POST, list, history-GET, done, undo - PATCH, delete-DELETE 사용&lt;/li&gt;
+&lt;li&gt;정기적으로 꾸준히 해야 하는 일을 미리 생성하는 과정을 어떻게 처리해야 하는지 고민, 미들웨어 안에서 해당 기능을 구현하는 방향&lt;/li&gt;
+&lt;li&gt;SEO가 중요한 사이트가 아니므로 할 일을 보여줄 페이지는 클라이언트 컴포넌트로 구현&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;내일 할 일
+&lt;ul&gt;
+&lt;li&gt;프로젝트 최초 배포 및 구입한 도메인 연동, 필요한 과정을 전부 수행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[oneul.me 프로젝트 일지 1]]></title><description><![CDATA[예전에 듀얼 부팅으로 설치한 OS 관리에 어려움을 느끼고 우분투를 사용하는 작업용 PC를 따로 한대 만들었다. PC…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/205/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/205/</guid><pubDate>Thu, 27 Jul 2023 22:12:00 GMT</pubDate><content:encoded>&lt;p&gt;예전에 듀얼 부팅으로 설치한 OS 관리에 어려움을 느끼고 우분투를 사용하는 작업용 PC를 따로 한대 만들었다. PC가 두 대이고, 스마트폰과 태블릿까지 합치면 총 네 개의 전자기기를 사용하는데 할일과 일정을 통합해서 관리할 수 있는 어플리케이션이 있으면 좋겠다는 생각을 부트캠프 시절부터 했었다. 브라우저를 켰을 때 제일 처음에 실행되는 웹 어플리케이션이면 기기를 가리지 않고 찾아볼 수 있어서 괜찮다고 생각했는데, 부트캠프 수료 프로젝트는 지나치게 흔한 기능은 좋지 않다고 하여 실행에 옮기지 못했다. 앞으로 계속 사용하면서 기능을 추가하는 개인 프로젝트로는 적합한 것 같아서 실행에 옮기려고 한다.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;프로젝트 목적
 &lt;ul&gt;
