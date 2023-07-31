@@ -9,6 +9,7 @@ description: "프로젝트 일지 2"
     - URL은 /api/mywork/create(할 일 생성), list(할 일을 하루 단위로 조회), done(빈 체크박스에 체크 표시), undone(체크 표시를 다시 빈칸으로 돌린 경우), history(과거 날짜에 내가 했던 일을 조회), delete(앱 목적상 지우는 기능이 있으면 안되는데 잘못 생성해서 지워야 할 경우가 있으므로 구현)    
     - HTTP 메서드는 목적에 맞춰서 create-POST, list, history-GET, done, undo - PATCH, delete-DELETE 사용    
     - 정기적으로 꾸준히 해야 하는 일을 미리 생성하는 과정을 어떻게 처리해야 하는지 고민, 미들웨어 안에서 해당 기능을 구현하는 방향    
+    - 로그인 관련 기능은 그냥 NextAuth + 구글 Authentication 사용    
     - SEO가 중요한 사이트가 아니므로 할 일을 보여줄 페이지는 클라이언트 컴포넌트로 구현    
 2. 내일 할 일    
     - 프로젝트 최초 배포 및 구입한 도메인 연동, 필요한 과정을 전부 수행    
